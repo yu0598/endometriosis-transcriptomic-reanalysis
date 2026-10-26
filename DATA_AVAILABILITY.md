@@ -1,6 +1,6 @@
 # Data and code availability
 
-Code and the processed-input reproducibility package are available at https://github.com/yu0598/endometriosis-transcriptomic-reanalysis . A fixed software archive is being prepared; this file does not assert an unissued DOI.
+Code and the processed-input reproducibility package are available at https://github.com/yu0598/endometriosis-transcriptomic-reanalysis . The fixed v1.0.0 software archive is identified by https://doi.org/10.5281/zenodo.23670029 .
 
 Included: exact processed gene matrices, fixed U157/U2=119, sample masks and metadata, frozen canonical Entrez membership, target/coefficient references, study CSVs, figure source tables, historical methods/audits and hash manifests. The raw-arm RDS files contain numeric matrices, not platform executables.
 

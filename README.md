@@ -43,4 +43,4 @@ Historical scripts are archival recipes requiring the larger original project an
 
 See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md), [DATA_LICENSE.md](DATA_LICENSE.md), [REFERENCES.md](REFERENCES.md), [optional_raw/README.md](optional_raw/README.md), and [CITATION.cff](CITATION.cff). MIT applies to original code; third-party data and identifiers retain their source terms. Full raw archives, journal full texts, internal review materials, manuscript drafts and installed runtimes are excluded.
 
-Repository: https://github.com/yu0598/endometriosis-transcriptomic-reanalysis . Cite the fixed version and its archival DOI when available; no DOI is asserted until the archive is published.
+Repository: https://github.com/yu0598/endometriosis-transcriptomic-reanalysis . Fixed software archive v1.0.0: [10.5281/zenodo.23670029](https://doi.org/10.5281/zenodo.23670029). Please cite the fixed version when reusing this package.
