@@ -1,0 +1,9 @@
+"from","to","relation","path","dashed"
+"a1","a2","source screening","32,132;32,125",FALSE
+"a2","a3","target-source admission","32,111;32,104.5",FALSE
+"a3","a4","both-target admission","32,87.5;32,81.5",FALSE
+"a1","a5","not advanced","5,139;3,139;3,35;5,35",TRUE
+"b1","b2","exact identity audit","92,131.5;92,124.5",FALSE
+"b3","b4","structural file admission","92,65.5;92,58",FALSE
+"c1","c3","first clinical mean estimand","126,137;123,137;123,67;126,67",FALSE
+"c2","c3","second and joint mean estimands","153,94;153,80",FALSE

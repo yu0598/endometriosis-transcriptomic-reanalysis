@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this fixed software version when using the code or processed-input package."
+type: software
+title: "Endometriosis transcriptomic reanalysis: source audit and sample-level gene associations"
+authors:
+  - family-names: Yu
+    given-names: Huafeng
+    affiliation: "Zhujiang Hospital, Southern Medical University"
+    orcid: "https://orcid.org/0009-0005-9020-1272"
+version: 1.0.0
+date-released: 2026-10-26
+repository-code: "https://github.com/yu0598/endometriosis-transcriptomic-reanalysis"
+license: MIT
+keywords:
+  - endometriosis
+  - transcriptomics
+  - reproducibility
+  - provenance

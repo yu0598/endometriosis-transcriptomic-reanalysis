@@ -1,0 +1,153 @@
+{
+  "verified_at_utc": "2026-10-26T15:38:39.265725+00:00",
+  "result": "PASS",
+  "checks": [
+    {
+      "table": "primary628",
+      "reference_rows": 628,
+      "actual_rows": 628,
+      "numeric_cells": 14392,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "primary_secondary471",
+      "reference_rows": 471,
+      "actual_rows": 471,
+      "numeric_cells": 2193,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "second_mean714",
+      "reference_rows": 714,
+      "actual_rows": 714,
+      "numeric_cells": 17520,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "second_interaction714",
+      "reference_rows": 714,
+      "actual_rows": 714,
+      "numeric_cells": 16092,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "joint714",
+      "reference_rows": 714,
+      "actual_rows": 714,
+      "numeric_cells": 12054,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "primary_mean_144_all_background_coefficients",
+      "reference_rows": 20049,
+      "actual_rows": 20049,
+      "numeric_cells": 180441,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "sensitivity_median_144_all_background_coefficients",
+      "reference_rows": 19989,
+      "actual_rows": 19989,
+      "numeric_cells": 179901,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "sensitivity_all148_additive_all_background_coefficients",
+      "reference_rows": 20051,
+      "actual_rows": 20051,
+      "numeric_cells": 100255,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "rawmean34_all_background_coefficients",
+      "reference_rows": 19263,
+      "actual_rows": 19263,
+      "numeric_cells": 77052,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "rawmedian34_all_background_coefficients",
+      "reference_rows": 19263,
+      "actual_rows": 19263,
+      "numeric_cells": 77052,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "rawmean_noSourceQC32_all_background_coefficients",
+      "reference_rows": 19263,
+      "actual_rows": 19263,
+      "numeric_cells": 77052,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "rawmean_FEversionAdjusted34_all_background_coefficients",
+      "reference_rows": 19263,
+      "actual_rows": 19263,
+      "numeric_cells": 96315,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "sourceProcessed_mean36_all_background_coefficients",
+      "reference_rows": 18402,
+      "actual_rows": 18402,
+      "numeric_cells": 73608,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "table": "sourceProcessed_mean_noQC32_all_background_coefficients",
+      "reference_rows": 18402,
+      "actual_rows": 18402,
+      "numeric_cells": 73608,
+      "max_absolute_error": 0.0,
+      "max_relative_error": 0.0,
+      "passed": true,
+      "failures": []
+    }
+  ],
+  "target_rows": 3241,
+  "tolerances": {
+    "absolute": 2e-10,
+    "relative": 2e-09
+  },
+  "source_parser_warning_policy": "Preserve previously documented at-most-one-ULP source CSV parsing differences; do not change numerical thresholds on failure.",
+  "scope": "All fixed target and fitted-coefficient rows; no result-based selection; HC3 reference tables supplied separately, not recomputed by this standard-library comparator."
+}

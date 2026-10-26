@@ -1,0 +1,272 @@
+[
+  {
+    "path": "data/clinical_preparation/GSE51981_mean_probe_gene_matrix.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_mean_probe_gene_matrix.csv.gz",
+    "sha256": "8a4729a5eaad5b8ebecf2bbc28f34a4cdc1657b21ef29cdca0a0a6e0b8f92a34",
+    "role": "required processed input, fixed mask/identifier, or archival technical QA"
+  },
+  {
+    "path": "data/clinical_preparation/GSE51981_median_probe_gene_matrix.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_median_probe_gene_matrix.csv.gz",
+    "sha256": "5946bda79d80218873ab18c83648b1064bf082cd7599f069f686aaced3708bc0",
+    "role": "required processed input, fixed mask/identifier, or archival technical QA"
+  },
+  {
+    "path": "data/clinical_preparation/GSE120103_mean_probe_gene_matrix.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_mean_probe_gene_matrix.csv.gz",
+    "sha256": "b93f4caea89ae68d21de1d22e670a38c91204ac5c8daf326ad89601f3ad4ad10",
+    "role": "required processed input, fixed mask/identifier, or archival technical QA"
+  },
+  {
+    "path": "data/clinical_preparation/GSE51981_fixed_clinical_design.csv",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_fixed_clinical_design.csv",
+    "sha256": "e4f0463d39a1fe0fcb4e0896cbbdfd8d27a980be028059fc9d979e4d145b7a7e",
+    "role": "required processed input, fixed mask/identifier, or archival technical QA"
+  },
+  {
+    "path": "data/clinical_preparation/GSE120103_fixed_clinical_design.csv",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_fixed_clinical_design.csv",
+    "sha256": "11b6d50d274ba3263a8e310774bc470aabbbce44cb6cea6666f9a979ce79f9d4",
+    "role": "required processed input, fixed mask/identifier, or archival technical QA"
+  },
+  {
+    "path": "data/clinical_preparation/U_all_identifiable_source_admissible_genes.csv",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_preparation/U_all_identifiable_source_admissible_genes.csv",
+    "sha256": "60a7d2c10606a440528b9724ac471a3d405af817f7aae9180222a2b796965187",
+    "role": "required processed input, fixed mask/identifier, or archival technical QA"
+  },
+  {
+    "path": "data/clinical_preparation/U2_both_source_admissible_genes.csv",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_preparation/U2_both_source_admissible_genes.csv",
+    "sha256": "6a79249a67104003eba01ae16e95c07b397f0c16ce8cea442196b68bee42b5d5",
+    "role": "required processed input, fixed mask/identifier, or archival technical QA"
+  },
+  {
+    "path": "data/clinical_preparation/orgHs_all_Entrez_to_symbol.csv",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_preparation/orgHs_all_Entrez_to_symbol.csv",
+    "sha256": "c3fc21371d57ffbf28a1f6dc1ed86121c64a9562ad46437ce6659b4915b99d27",
+    "role": "required processed input, fixed mask/identifier, or archival technical QA"
+  },
+  {
+    "path": "data/clinical_preparation/independent_source_preparation_verification.json",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_preparation/independent_source_preparation_verification.json",
+    "sha256": "f889b58ae9685e8c47ef022ec7776cfdfdcad46395eb42336dcf14e1268f84d7",
+    "role": "required processed input, fixed mask/identifier, or archival technical QA"
+  },
+  {
+    "path": "data/raw_prepared/Entrez_mean_different_ProbeName_log2_matrix.rds",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/GSE120103_raw_preparation/Entrez_mean_different_ProbeName_log2_matrix.rds",
+    "sha256": "25d072a81edd3f1ff581771282467442b580974c55187cd81e8d14768625ebc4",
+    "role": "required exact raw-arm gene-level processed input or fixed metadata/QA"
+  },
+  {
+    "path": "data/raw_prepared/Entrez_median_different_ProbeName_log2_matrix.rds",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/GSE120103_raw_preparation/Entrez_median_different_ProbeName_log2_matrix.rds",
+    "sha256": "24985cb1a7f9a6cd34bd434ef64cc7b29e155b4380b584604e92921bfa387a45",
+    "role": "required exact raw-arm gene-level processed input or fixed metadata/QA"
+  },
+  {
+    "path": "data/raw_prepared/raw34_fixed_clinical_and_technical_metadata.csv",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/GSE120103_raw_preparation/raw34_fixed_clinical_and_technical_metadata.csv",
+    "sha256": "550426dd9287531aa71f794bf458acf820a27ec3ca72aeecf9731beae47e0ec9",
+    "role": "required exact raw-arm gene-level processed input or fixed metadata/QA"
+  },
+  {
+    "path": "data/raw_prepared/independent_raw_preprocessing_verification.json",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/GSE120103_raw_preparation/independent_raw_preprocessing_verification.json",
+    "sha256": "081cf74851f2aae6be9eecc81c477bc856a36a31d480222d80a3547332a9ad8f",
+    "role": "required exact raw-arm gene-level processed input or fixed metadata/QA"
+  },
+  {
+    "path": "provenance/audits/independent127_GSE51981_statistical_verification.json",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/independent127_GSE51981_statistical_verification.json",
+    "sha256": "9fef43c8e8ea3864febcb0548c56622f6067019131d8805d28611de05e6fa5b6",
+    "role": "archival independent audit; cited by original statistical logic"
+  },
+  {
+    "path": "provenance/audits/independent134_secondary_statistical_verification.json",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/independent134_secondary_statistical_verification.json",
+    "sha256": "3a79c69d71ac46ba2542ebe587b97fa49a493e606a9e61f1e1d0d48af298c321",
+    "role": "archival secondary independent audit"
+  },
+  {
+    "path": "provenance/sessions/primary_R_session.txt",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/R_primary_clinical_session.txt",
+    "sha256": "3382c290da4bd4182399ebf40761dfedb0e732abe5392a265b8a61811b4dab7d",
+    "role": "observed original software versions"
+  },
+  {
+    "path": "provenance/sessions/secondary_R_session.txt",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/R_secondary_clinical_session.txt",
+    "sha256": "3382c290da4bd4182399ebf40761dfedb0e732abe5392a265b8a61811b4dab7d",
+    "role": "observed original software versions"
+  },
+  {
+    "path": "provenance/historical_scripts/125_run_frozen_GSE51981_gene_transfer.R",
+    "source_project_relative_path": "scripts/125_run_frozen_GSE51981_gene_transfer.R",
+    "sha256": "68f55e5ff2e19e13ab7f14848515250d1d0b67354763760ce9020767fe9422da",
+    "role": "unchanged historical source; original full-project audit commands are not the portable entrypoint"
+  },
+  {
+    "path": "provenance/historical_scripts/130_run_frozen_GSE120103_gene_transfer.R",
+    "source_project_relative_path": "scripts/130_run_frozen_GSE120103_gene_transfer.R",
+    "sha256": "af32aec868b1355bc271d3b57a414e26ff062707d713467c4d33442863257c99",
+    "role": "unchanged historical source; original full-project audit commands are not the portable entrypoint"
+  },
+  {
+    "path": "provenance/historical_scripts/127_verify_GSE51981_models_independently.py",
+    "source_project_relative_path": "scripts/127_verify_GSE51981_models_independently.py",
+    "sha256": "2c152041b3c4daedf06261a24f7a07104dfdbc5ba87fb1022ba9d45ba8aa3433",
+    "role": "unchanged historical source; original full-project audit commands are not the portable entrypoint"
+  },
+  {
+    "path": "provenance/historical_scripts/134_verify_GSE120103_secondary_models.py",
+    "source_project_relative_path": "scripts/134_verify_GSE120103_secondary_models.py",
+    "sha256": "b9af3e76d0e856e2dc507bb2a25fd843ee5dec8dd709aa8f5cc4c63def807a16",
+    "role": "unchanged historical source; original full-project audit commands are not the portable entrypoint"
+  },
+  {
+    "path": "reference/targets/primary628.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/all_fixed_U157_primary_and_sensitivity_results.csv",
+    "sha256": "9a8f0343a2e0da3fb10c6d7fba34c849344f8c28cb4371b48a17615f6de79c11",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/targets/primary_secondary471.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/all_secondary_3U471_results.csv",
+    "sha256": "b86c3a1165a0c2d8e9d73a6b716edafa69fc2340c865343afb1d51bf3e480c38",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/targets/second_mean714.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/all_six_modes_714_U2_mean_results.csv",
+    "sha256": "b48b55e0f764a41d3508c73597b9d570a76b1aa69170287e0561f6c604bcd42c",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/targets/second_interaction714.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/all_six_modes_714_U2_SECONDARY_interaction_results.csv",
+    "sha256": "32690064156a4a745f544ee75891df429982c77602c219bc3d03185a8e8fecbc",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/targets/joint714.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/all_six_modes_714_U2_same_direction_IUT.csv",
+    "sha256": "c1251b81b5918e22aee85d12691616c9866dd127ae8c98d232a62db5ecb76956",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/HC3/primary_HC3_471.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/independent127_HC3_all_U157_three_modes.csv",
+    "sha256": "a1d12d9baa72d5bbaa2e205afb47a00871000bdab27844ae5c3a3600655e1dbf",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/HC3/second_HC3_1428.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/independent134_HC3_all119_both_contrasts_six_modes.csv",
+    "sha256": "488bdd3207ae9a9423735e5261b171a07474da0355b4e3858c11ca23e096105f",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/coefficients/rawmean34.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/rawmean34_all_background_fitted_coefficients.csv",
+    "sha256": "69c21a0f88ebf224b4a0ce23873fe91e7a532fee03bfbcde4d83c94b791f736e",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/coefficients/rawmedian34.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/rawmedian34_all_background_fitted_coefficients.csv",
+    "sha256": "2d7d13db96f78232c4a746d71c077f5117b1305a986a5322a974e8319bd5f0e3",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/coefficients/rawmean_noSourceQC32.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/rawmean_noSourceQC32_all_background_fitted_coefficients.csv",
+    "sha256": "860fa801d1fd319f2a04bc6b87e23d3a4a32182d405b208a2ea2b1e71dafb9d9",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/coefficients/rawmean_FEversionAdjusted34.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/rawmean_FEversionAdjusted34_all_background_fitted_coefficients.csv",
+    "sha256": "399bed8a9b87ee78f92f16b8df5d641ffc24834a48ddda636c008776faf60cd6",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/coefficients/sourceProcessed_mean36.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/sourceProcessed_mean36_all_background_fitted_coefficients.csv",
+    "sha256": "9c85b6e7f96b81ee714c8ffef0c3df3288cad40b75aa59ff773c743f55ba9fa9",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "reference/coefficients/sourceProcessed_mean_noQC32.csv.gz",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/clinical_analysis/GSE120103_secondary/sourceProcessed_mean_noQC32_all_background_fitted_coefficients.csv",
+    "sha256": "de166daaf08e27b7ccbfa96baf5bcc9285bd99c0612347a2846181ca5e850160",
+    "role": "canonical numerical reference; original CSV bytes compressed without modification"
+  },
+  {
+    "path": "optional_raw/original_scripts/120_retrieve_clinical_benchmark_inputs.py",
+    "source_project_relative_path": "scripts/120_retrieve_clinical_benchmark_inputs.py",
+    "sha256": "0eba4fd912d84e1e3d65c0b28d8a0665eefc11d08cb75e0ceb4cc2876f6da3ab",
+    "role": "unchanged optional upstream reconstruction source"
+  },
+  {
+    "path": "optional_raw/original_scripts/GSE120103_rawFE_download_v13.py",
+    "source_project_relative_path": "scripts/GSE120103_rawFE_download_v13.py",
+    "sha256": "7e4f293d9c60f3cd184b12ca2fd4e14fae6b51caf0c9562b1818eb4ea4012eb7",
+    "role": "unchanged optional upstream reconstruction source"
+  },
+  {
+    "path": "optional_raw/original_scripts/GSE120103_rawFE_schema_inventory_v13.py",
+    "source_project_relative_path": "scripts/GSE120103_rawFE_schema_inventory_v13.py",
+    "sha256": "9adcf9e4e7be98147a9e65ef5c9b43e483c3f43c38428f3182856a9c5d34fa2e",
+    "role": "unchanged optional upstream reconstruction source"
+  },
+  {
+    "path": "optional_raw/original_scripts/128_reprocess_GSE120103_raw_Agilent.R",
+    "source_project_relative_path": "scripts/128_reprocess_GSE120103_raw_Agilent.R",
+    "sha256": "094edc066ea83b6256088addc16b5ef0ca7162f83d65fd731c5d31b2e74be88f",
+    "role": "unchanged optional upstream reconstruction source"
+  },
+  {
+    "path": "optional_raw/source_manifests/rawFE_retrieval_manifest.csv",
+    "source_project_relative_path": "data_raw/GSE120103_rawFE_v13/rawFE_retrieval_manifest.csv",
+    "sha256": "00e1df96afee75e5eb5ecaa40a075ce617b307532f2e60da82f3e2cc15a8891f",
+    "role": "optional raw/download/identity provenance; historical full manifests are explanatory, not portable-run requirements"
+  },
+  {
+    "path": "optional_raw/source_manifests/GSE120103_filelist.txt",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSE120103_filelist.txt",
+    "sha256": "f52836cd124239d39f5e31b42249bf942eda7ee6abcc55ced320a7bbafdff0ce",
+    "role": "optional raw/download/identity provenance; historical full manifests are explanatory, not portable-run requirements"
+  },
+  {
+    "path": "optional_raw/source_manifests/raw_FE_schema_inventory.csv",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_schema_inventory.csv",
+    "sha256": "79a770da523f305cbc8850aebfa87920a7eb5ca1d71a1b6732f6ede759e3291d",
+    "role": "optional raw/download/identity provenance; historical full manifests are explanatory, not portable-run requirements"
+  },
+  {
+    "path": "optional_raw/source_manifests/GSE120103_source_processing_followup.csv",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_source_processing_followup.csv",
+    "sha256": "60f295e9501efde177dfb74dac672c849a0bfa0830d4cb8649536df2dc47b469",
+    "role": "optional raw/download/identity provenance; historical full manifests are explanatory, not portable-run requirements"
+  },
+  {
+    "path": "optional_raw/source_manifests/official_processed_input_retrieval.json",
+    "source_project_relative_path": "sources/biomarker_transfer_v13/clinical_inputs/retrieval.json",
+    "sha256": "724475bc5c8df22eae495e2af6f111b6ed7bfe94b8097f40d1eafdf278bc2a08",
+    "role": "optional raw/download/identity provenance; historical full manifests are explanatory, not portable-run requirements"
+  },
+  {
+    "path": "optional_raw/source_manifests/historical_preprocessing_freeze.json",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/GSE120103_raw_preparation/preprocessing_freeze.json",
+    "sha256": "4412ea14cca5e55d3d3ea8278c56a96fcf59fc4c7253347bf70503b2523ce969",
+    "role": "optional raw/download/identity provenance; historical full manifests are explanatory, not portable-run requirements"
+  },
+  {
+    "path": "optional_raw/source_manifests/historical_preprocessing_output_manifest.csv",
+    "source_project_relative_path": "outputs/biomarker_transfer_v13/GSE120103_raw_preparation/preprocessing_output_manifest.csv",
+    "sha256": "d4ccd88c81f30283bfc010088e599d6a3f3e3c4e490c0546662429a2e0e43b47",
+    "role": "optional raw/download/identity provenance; historical full manifests are explanatory, not portable-run requirements"
+  }
+]

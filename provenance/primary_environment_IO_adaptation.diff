@@ -1,0 +1,22 @@
+--- historical
++++ portable
+@@ -1,13 +1,12 @@
+-args <- commandArgs(trailingOnly=FALSE)
+-script <- gsub('~+~',' ',sub('^--file=','',args[grepl('^--file=',args)]),fixed=TRUE)
++args_all <- commandArgs(trailingOnly=FALSE)
++script <- gsub('~+~',' ',sub('^--file=','',args_all[grepl('^--file=',args_all)]),fixed=TRUE)
+ root <- dirname(dirname(normalizePath(script)))
+-.libPaths(c(file.path(root,'runtime/R-library'),.libPaths()))
++source(file.path(root,'scripts','portable_io.R'))
+ suppressPackageStartupMessages({library(limma);library(jsonlite);library(digest)})
+-prep <- file.path(root,'outputs/biomarker_transfer_v13/clinical_preparation')
+-out <- file.path(root,'outputs/biomarker_transfer_v13/clinical_analysis');dir.create(out,showWarnings=FALSE)
++prep <- file.path(root,'data','clinical_preparation')
++out <- file.path(root,'results','primary');dir.create(out,recursive=TRUE,showWarnings=FALSE)
+ options(device=function(...)grDevices::pdf(file.path(out,'diagnostic-default-device.pdf'),...))
+-freeze <- fromJSON(file.path(prep,'primary_clinical_analysis_freeze.json'))
+-for(i in seq_len(nrow(freeze$files)))stopifnot(digest(file=file.path(root,freeze$files$path[i]),algo='sha256')==freeze$files$sha256[i])
++verify_inputs()
+ qa <- fromJSON(file.path(prep,'independent_source_preparation_verification.json'))
+ stopifnot(qa$result=='PASS')
+ U <- read.csv(file.path(prep,'U_all_identifiable_source_admissible_genes.csv'),colClasses='character')

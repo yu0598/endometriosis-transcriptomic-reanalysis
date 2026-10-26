@@ -1,0 +1,34 @@
+{
+  "scope": "Processed-input statistical rerun; all fixed families and modes; no raw self-contained claim",
+  "U": 157,
+  "U2": 119,
+  "primary_samples": 144,
+  "raw_second_samples": 34,
+  "reference_R": "4.6.1",
+  "R_packages": {
+    "limma": "3.68.5",
+    "statmod": "1.5.2",
+    "jsonlite": "2.0.0",
+    "digest": "0.6.39"
+  },
+  "historical_primary_freeze_sha256": "d4879ea06c57a2377d42d6cde7a8feecc21e3e1456d37cc0817f6a9bf4a4cf1f",
+  "historical_secondary_freeze_sha256": "91213422626026b7149a7d5982abf00552d5869f1c2de631a3d1f05dae6854cc",
+  "historical_raw_preprocessing_freeze_sha256": "4412ea14cca5e55d3d3ea8278c56a96fcf59fc4c7253347bf70503b2523ce969",
+  "unchanged_statistical_bodies": [
+    {
+      "script": "run_primary.R",
+      "change": "Bootstrap, library path, data/results paths and manifest verification only",
+      "unchanged_statistics": "Entire text from U <- read.csv through end is byte-identical to frozen125"
+    },
+    {
+      "script": "run_secondary.R",
+      "change": "Bootstrap/library/data/results/audit paths; replace original preflight/freeze I/O branches with shipped-input verification",
+      "unchanged_statistics": "Parameters, mode definitions, build_design and entire main function are byte-identical to frozen130"
+    }
+  ],
+  "builder_project_relative_path": "scripts/139_build_reproducibility_package.py",
+  "builder_sha256": "3093e452bcad9fb8b2c962b2aad2dc381681e39a21ef6a8d348e249cced6dbc2",
+  "required_target_rows": 3241,
+  "background_coefficient_models": 9,
+  "raw_rebuild_tested_in_this_packaging_task": false
+}

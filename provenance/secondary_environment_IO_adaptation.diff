@@ -1,0 +1,102 @@
+--- historical
++++ portable
+@@ -1,18 +1,19 @@
+ # Fixed second-cohort mean and interaction tests; no score, AUC or gene selection.
+-args <- commandArgs(trailingOnly = TRUE)
+-stopifnot(length(args) == 1L, args %in% c('--preflight', '--freeze-only', '--run'))
+-root <- normalizePath(getwd())
+-stopifnot(basename(root) == 'IUA_TE_内膜修复研究_2026', Sys.getenv('TMPDIR') == 'runtime/tmp')
+-.libPaths(c(file.path(root, 'runtime/R-library'), .libPaths()))
++args_all <- commandArgs(trailingOnly=FALSE)
++script <- gsub('~+~',' ',sub('^--file=','',args_all[grepl('^--file=',args_all)]),fixed=TRUE)
++root <- dirname(dirname(normalizePath(script)))
++source(file.path(root,'scripts','portable_io.R'))
++args <- commandArgs(trailingOnly=TRUE)
++stopifnot(identical(args,'--run'))
+ suppressPackageStartupMessages({library(limma); library(jsonlite); library(digest)})
+-prep <- 'outputs/biomarker_transfer_v13/clinical_preparation'
+-rawprep <- 'outputs/biomarker_transfer_v13/GSE120103_raw_preparation'
+-primary <- 'outputs/biomarker_transfer_v13/clinical_analysis'
+-out <- file.path(primary, 'GSE120103_secondary')
++prep <- file.path(root,'data','clinical_preparation')
++rawprep <- file.path(root,'data','raw_prepared')
++primary <- file.path(root,'results','primary')
++out <- file.path(root,'results','secondary')
+ dir.create(out, recursive = TRUE, showWarnings = FALSE)
+ options(warn = 1, digits = 17, device = function(...) pdf(file.path(out, 'unused_default_device.pdf'), ...))
+-freeze_path <- file.path(out, 'secondary_statistical_freeze.json')
+-script_path <- 'scripts/130_run_frozen_GSE120103_gene_transfer.R'
++freeze_path <- file.path(root,'SEMANTIC_INPUT_MANIFEST.csv')
++script_path <- 'scripts/run_secondary.R'
+ sha <- function(path) digest(file = path, algo = 'sha256')
+ read_csv <- function(path) read.csv(path, colClasses = 'character', check.names = FALSE,
+                                   fileEncoding = 'UTF-8-BOM', na.strings = c('', 'NA'))
+@@ -60,7 +61,7 @@
+ source_meta <- read_csv(file.path(prep, 'GSE120103_fixed_clinical_design.csv'))
+ stopifnot(nrow(raw_meta) == 34L, nrow(source_meta) == 36L)
+ raw_qa <- read_json(file.path(rawprep, 'independent_raw_preprocessing_verification.json'), simplifyVector = TRUE)
+-primary_qa <- read_json(file.path(primary, 'independent127_GSE51981_statistical_verification.json'), simplifyVector = TRUE)
++primary_qa <- read_json(file.path(root,'provenance','audits','independent127_GSE51981_statistical_verification.json'), simplifyVector=TRUE)
+ stopifnot(raw_qa$result == 'PASS_WITH_EXTREME_TAIL_NUMERICAL_WARNING',
+           primary_qa$result == 'PASS_WITH_BACKGROUND_OLS_NUMERICAL_WARNINGS')
+ raw_failed <- raw_qa$checks$check[!raw_qa$checks$passed]
+@@ -95,58 +96,8 @@
+ })
+ preflight <- do.call(rbind, preflight)
+ stopifnot(all(preflight$full_rank), identical(preflight$rank, c(4L,4L,4L,5L,4L,4L)))
+-if (args == '--preflight') {
+-  stopifnot(!file.exists(freeze_path))
+-  write_csv(preflight, 'secondary_design_preflight.csv')
+-  write_json_out(list(status = 'draft_parsed_metadata_design_only_no_group_fit', parameters = parameters,
+-    modes = modes, preflight = preflight, raw_QA = raw_qa$result, raw_QA_strict_warning = raw_failed,
+-    primary_QA = primary_qa$result, group_fits_started = FALSE), 'secondary_preflight.json')
+-  cat('PREFLIGHT_PASS: six fixed designs, counts 9/9/9/7 or 9/9/9/9 or 9/9/9/5; FE rank5; NO GROUP FIT.\n')
+-  quit(save = 'no', status = 0)
+-}
+-if (args == '--freeze-only') {
+-  stopifnot(!file.exists(freeze_path))
+-  rawfreeze <- read_json(file.path(rawprep, 'preprocessing_freeze.json'), simplifyVector = TRUE)
+-  capture.output(sessionInfo(), file = file.path(out, 'secondary_R_session_before_freeze.txt'))
+-  inputs <- unique(c('AGENTS.md',
+-    '33_临床基因迁移检验规则_v13_2.md', '34_临床检验执行补充_原始Agilent处理与新意边界_v13_3.md',
+-    '35_第二队列原始处理实施约定_v13_4.md', script_path,
+-    'scripts/125_run_frozen_GSE51981_gene_transfer.R', 'scripts/127_verify_GSE51981_models_independently.py',
+-    'scripts/128_reprocess_GSE120103_raw_Agilent.R', 'scripts/131_verify_raw_Agilent_preprocessing.py',
+-    rawfreeze$inputs$path, list.files(rawprep, recursive = TRUE, full.names = TRUE),
+-    list.files(prep, recursive = TRUE, full.names = TRUE),
+-    list.files(primary, recursive = FALSE, full.names = TRUE)[!dir.exists(list.files(primary, recursive = FALSE, full.names = TRUE))],
+-    file.path(out, 'secondary_R_session_before_freeze.txt'),
+-    file.path(out, c('secondary_preflight.json', 'secondary_design_preflight.csv')),
+-    'runtime/R-library/limma/DESCRIPTION', 'runtime/R-library/limma/R/limma.rdb',
+-    'runtime/R-library/limma/R/limma.rdx'))
+-  stopifnot(all(file.exists(inputs)), !any(dir.exists(inputs)))
+-  manifest <- data.frame(path = sort(inputs), stringsAsFactors = FALSE)
+-  manifest$bytes <- unname(file.info(manifest$path)$size)
+-  manifest$sha256 <- vapply(manifest$path, sha, character(1))
+-  write_json(list(frozen_at_utc = format(Sys.time(), tz = 'UTC', usetz = TRUE), versions = versions,
+-    parameters = parameters, modes = modes, preflight = preflight,
+-    target_U_Entrez_ID = U$Entrez_ID, target_U2_Entrez_ID = U2$Entrez_ID,
+-    files = manifest, raw_preprocessing_QA = raw_qa$result, raw_preprocessing_strict_warning = raw_failed,
+-    primary_QA = primary_qa$result, secondary_group_fits_at_freeze = FALSE,
+-    primary_already_computed = TRUE, existing_primary_and_preparation_immutable = TRUE,
+-    scope = 'Second cohort association and same-direction IUT only, all fixed families; no diagnostic performance'),
+-    freeze_path, pretty = TRUE, auto_unbox = TRUE, digits = NA)
+-  cat('SECONDARY_FREEZE_WRITTEN', nrow(manifest), 'files; no secondary group fit.\n')
+-  quit(save = 'no', status = 0)
+-}
+-stopifnot(file.exists(freeze_path), !file.exists(file.path(out, 'secondary_run_started.json')))
+-freeze <- read_json(freeze_path, simplifyVector = TRUE)
+-stopifnot(identical(freeze$versions, versions), isTRUE(all.equal(freeze$parameters, parameters, check.attributes = FALSE)),
+-          isTRUE(all.equal(freeze$modes, modes, check.attributes = FALSE)),
+-          identical(freeze$target_U2_Entrez_ID, U2$Entrez_ID), identical(freeze$target_U_Entrez_ID, U$Entrez_ID))
+-verify_inputs <- function() {
+-  stopifnot(all(file.exists(freeze$files$path)), all(file.info(freeze$files$path)$size == freeze$files$bytes),
+-            identical(unname(vapply(freeze$files$path, sha, character(1))), freeze$files$sha256))
+-}
+ verify_inputs()
+-write_json_out(list(started_at_utc = format(Sys.time(), tz = 'UTC', usetz = TRUE),
+-                    freeze_sha256 = sha(freeze_path)), 'secondary_run_started.json')
++write_json_out(list(started_at_utc=format(Sys.time(),tz='UTC',usetz=TRUE),semantic_input_manifest_sha256=sha(freeze_path)), 'secondary_run_started.json')
+ warnings_seen <- character(); current_mode <- 'primary_component_read_only'
+ main <- function() {
+   # Exact first-cohort components; no significance or effect-size selection.

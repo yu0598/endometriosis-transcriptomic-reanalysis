@@ -1,0 +1,1077 @@
+{
+  "freeze_utc": "2026-10-26 10:15:27 UTC",
+  "scope": "Technical normalization only, after primary GSE51981 effects; before secondary GSE120103 gene effects",
+  "parameters": {
+    "cohort": "GSE120103",
+    "source_files": 36,
+    "admitted_files": 34,
+    "raw_only_exclusions": ["GSM3393522", "GSM3393523"],
+    "exclusion_rule": "Incomplete public FEATURES records; source-processed 36-sample arm unchanged",
+    "spot_admission": "ControlType=0 and finite gMedianSignal/gBGMedianSignal in all 34 admitted files",
+    "foreground": "gMedianSignal",
+    "background": "gBGMedianSignal",
+    "object_class": "EListRaw",
+    "background_method": "normexp",
+    "normexp_method": "saddle",
+    "offset": 50,
+    "normalization": "normalizeBetweenArrays(EListRaw,method=quantile): linear quantile then log2",
+    "duplicate_spots": "limma::avereps on log2-normalized physical spots, grouped by ProbeName",
+    "annotation": "Official frozen GPL6480.annot.gz; distinct trimmed Gene ID tokens split on ///",
+    "gene_admission": "Exactly one positive numeric Entrez token, present in frozen orgHs Entrez-to-symbol export",
+    "gene_primary": "Arithmetic mean across different ProbeName values",
+    "gene_sensitivity": "Median across different ProbeName values",
+    "target_U2": 119,
+    "target_U2_action": "Freeze and report availability only; never reduce family",
+    "no_intensity_cutoff": true,
+    "no_per_feature_outlier_flag_filter": true,
+    "no_biological_contrasts": true,
+    "no_candidate_effect_selection": true,
+    "no_cross_cohort_correction": true,
+    "no_sample_or_value_imputation": true,
+    "exact_baseline_of_source_processed_matrix": "Unresolved; no linear/log mixture assumed"
+  },
+  "versions": {
+    "R": "R version 4.6.1 (2026-06-24)",
+    "limma": "3.68.5",
+    "jsonlite": "2.0.0",
+    "digest": "0.6.39"
+  },
+  "target_U2_Entrez_ID": ["10365", "10752", "11082", "11130", "1191", "1234", "125", "1312", "1464", "1490", "1513", "1586", "1604", "165", "1674", "1750", "185", "187", "1894", "1901", "1956", "1958", "2026", "2027", "2099", "2212", "23114", "2321", "23224", "2353", "25842", "2627", "26298", "26471", "26585", "2669", "27339", "2908", "2934", "2941", "3113", "3162", "3216", "3431", "3479", "3566", "358", "3586", "4000", "401546", "4154", "4233", "4256", "4360", "47", "4734", "4790", "4803", "4829", "4921", "5047", "5054", "51110", "51411", "5157", "5166", "5175", "5241", "5320", "5376", "54829", "5564", "55707", "56654", "56895", "5733", "5737", "5740", "5743", "5768", "578", "5919", "5980", "6096", "633", "634", "6366", "6387", "64108", "64151", "64221", "6423", "684", "6850", "7057", "710", "718", "7295", "7345", "7412", "7474", "7857", "79605", "79977", "8038", "8324", "842", "857", "8736", "890", "891", "9053", "9061", "9353", "9592", "9601", "9844", "9945", "9957"],
+  "inputs": [
+    {
+      "path": "34_临床检验执行补充_原始Agilent处理与新意边界_v13_3.md",
+      "bytes": 4338,
+      "sha256": "eca0535e3716bc0454476f720580228e23dc06b2b3d0f060a4382738f63125b2",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "35_第二队列原始处理实施约定_v13_4.md",
+      "bytes": 2277,
+      "sha256": "96ee4c01b89de703b95faa1bf1618fd94f3631af1b55aee92eae8402d8f9de51",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1339,
+      "sha256": "f1ad5bcbb9a84bda35926a7c6ff4b41171c77849c33292036d50937cb2b10c67",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSE120103_RAW.tar",
+      "bytes": 109291520,
+      "sha256": "a5fa6c12b980d6536c67a263b4d722cf8fe0c0e7f9005cc75b3b678719008007",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393491_US10200365_251485082207_S01_GE1_107_Sep09_1_1.txt.gz",
+      "bytes": 2338716,
+      "sha256": "261ca2a561e3c4e7f57dff156c33cdb089de08ae49196c4ba664ca80a33bc8b2",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393492_US10200365_251485082207_S01_GE1_107_Sep09_1_2.txt.gz",
+      "bytes": 2337528,
+      "sha256": "91cee956845f236e434a3df69e805ccc3b6647db9afd316e97ea0d2ce57fa4dd",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393493_US10200365_251485082207_S01_GE1_107_Sep09_1_3.txt.gz",
+      "bytes": 2334803,
+      "sha256": "8efb198076321354ea637e93d51a60135bf91c254920b3020b9d04ff3bba1e8f",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393494_US10200365_251485082207_S01_GE1_107_Sep09_1_4.txt.gz",
+      "bytes": 2360566,
+      "sha256": "0a1e9afc313ffe4caa4a1a8fe55ad9ed944287fe458e699a302741e7c36eee08",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393495_US10200365_251485059772_S01_GE1_107_Sep09_1_2.txt.gz",
+      "bytes": 2296287,
+      "sha256": "3ce80de8f45c60e5deeed9dc0f0e9e359715255ae933494262d8f2155dcb8c5c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393496_US10200365_251485059961_S01_GE1_107_Sep09_1_2.txt.gz",
+      "bytes": 2322301,
+      "sha256": "25646977ce44a14c84268e2ae88224f8d7c43ebcfbe9458be6e8277304daff73",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393497_US10200365_251485059962_S01_GE1_107_Sep09_1_1.txt.gz",
+      "bytes": 2309410,
+      "sha256": "3c532a6028860e17830b3d58194d64cc67ec1a675cf405bf7a68d864c9b3b855",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393498_US10200365_251485059962_S01_GE1_107_Sep09_1_2.txt.gz",
+      "bytes": 2294628,
+      "sha256": "11363ab0aa529cbe8d3de3e7f2483d9b30498963b9d07bbb73e048a4fee65962",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393499_US10200365_251485059962_S01_GE1_107_Sep09_1_4.txt.gz",
+      "bytes": 2273176,
+      "sha256": "705245ca64e5a38a1025bd4484503df21f72ea2c641b04dbfb4092709881773a",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393500_US10200365_251485081299_S01_GE1_107_Sep09_1_1.txt.gz",
+      "bytes": 2323749,
+      "sha256": "7aad9241010ea53a23b6073b41286c39483cdc1f6279ee94505cd4464147efc9",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393501_US10200365_251485081299_S01_GE1_107_Sep09_1_2.txt.gz",
+      "bytes": 2315772,
+      "sha256": "8f982a944458f33196ecbd1aa4a436f59e599b7231ef873c02bfbe75c3f5ef86",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393502_US10200365_251485081299_S01_GE1_107_Sep09_1_3.txt.gz",
+      "bytes": 2317794,
+      "sha256": "3fda89fe7af888e68ad140abe916d9ede19084405664219d6483b601f11cf21b",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393503_US10200365_251485081299_S01_GE1_107_Sep09_1_4.txt.gz",
+      "bytes": 2301665,
+      "sha256": "4ba66f2c0f61fba702109486685470556d79ad344f56349ce813148911a9e743",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393504_US10200365_251485082208_S01_GE1_107_Sep09_1_1.txt.gz",
+      "bytes": 2367267,
+      "sha256": "2dd3229e062c28724c88ea7f6738cbffab7e1c8c141ebd60608b8e0501316ae3",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393505_US10200365_251485082208_S01_GE1_107_Sep09_1_2.txt.gz",
+      "bytes": 2349971,
+      "sha256": "1ed6c0d1d304a9154b8631c6bd1652ceee1c6aae69b6e1fc27c56148a315e814",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393506_US10200365_251485082208_S01_GE1_107_Sep09_1_3.txt.gz",
+      "bytes": 2320618,
+      "sha256": "8dc8f9e3b186764c7041678c9fcb7ebc2e3f396636d2bdaa492b33d20e6b5456",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393507_US10200365_251485082208_S01_GE1_107_Sep09_1_4.txt.gz",
+      "bytes": 2334468,
+      "sha256": "46371291d74dbe53918c8655fe096c96eccf01f14affbc040019e12b19b94455",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393508_US10200365_251485079910_S01_GE1_107_Sep09_1_1.txt.gz",
+      "bytes": 2343439,
+      "sha256": "d7e02ed61eb18ff2d2aa727bd53c168dcaeb81523e03ed0864466c4347887b6b",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393509_NA_251485079826_S001_GE1_107_Sep09_1_1.txt.gz",
+      "bytes": 2294823,
+      "sha256": "3855129b1c9a15670868708e7845e87fd50477edf52e1c47869fc5f0d78c9a22",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393510_NA_251485079826_S001_GE1_107_Sep09_1_2.txt.gz",
+      "bytes": 2303687,
+      "sha256": "1d418fb8e346908834f1bdeb0f3bc98f3ed3371fb704f5c838ac5fb576d5318d",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393511_NA_251485079826_S001_GE1_107_Sep09_1_3.txt.gz",
+      "bytes": 2307482,
+      "sha256": "d0911529731257a8af5b46cd2c46f812db76afab3666e45c25ddbdff9befb88a",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393512_NA_251485079827_S001_GE1_107_Sep09_1_2.txt.gz",
+      "bytes": 2307653,
+      "sha256": "b10275b42b8de23cae947b4cb7da4e883ba4a908687c1711c49a33b22b4d91f0",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393513_NA_251485079827_S001_GE1_107_Sep09_1_3.txt.gz",
+      "bytes": 2311453,
+      "sha256": "b73fedcfd6bcbf13ec64bc25a6ea463cec6abb8eae71e162d6fabd0b48a8e3ed",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393514_NA_251485079827_S001_GE1_107_Sep09_1_4.txt.gz",
+      "bytes": 2283438,
+      "sha256": "e871bc6cc4818137460f8b03d93d6f56d0b08450bd18f9b091e80f2f27bd9a1c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393515_NA_251485079827_S001_GE1_107_Sep09_1_1.txt.gz",
+      "bytes": 2301803,
+      "sha256": "65144c3d13cacbe7e96e59f32ba36cf177204da3557d1c34450116ccc5f8e77b",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393516_US10200365_251485081301_S01_GE1_107_Sep09_1_4.txt.gz",
+      "bytes": 2306839,
+      "sha256": "54caecbd9b211416c5833a2178479c21dcfef2cf1d84be1e66121135909a947c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393517_US10200365_251485081302_S01_GE1_107_Sep09_1_4.txt.gz",
+      "bytes": 2303496,
+      "sha256": "a7f3ca128494c5f6df3a6a7cdcb21488b38c287b6fb5905a7b35bf87a569d64d",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393518_US10200365_251485079909_S01_GE1_107_Sep09_1_1.txt.gz",
+      "bytes": 2326934,
+      "sha256": "62bfc041fb7d0ac2fae1ac247bb12356ae5e258a27d36ac3d13f98100eccc66d",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393519_US10200365_251485079909_S01_GE1_107_Sep09_1_2.txt.gz",
+      "bytes": 2322768,
+      "sha256": "62177c6dacdd685394516ab403d3b430fd02ec132b95edad3725e7319dc616e0",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393520_US10200365_251485079909_S01_GE1_107_Sep09_1_3.txt.gz",
+      "bytes": 2316206,
+      "sha256": "ddc897183e9e96668c22b808b5d7f50376cfc20b48565fa2385126f3e8764f01",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393521_US10200365_251485079909_S01_GE1_107_Sep09_1_4.txt.gz",
+      "bytes": 2292611,
+      "sha256": "898ff391ada386834ffe85d980e876eb56ce6c7a7b6102fcadd91ed6cc4ababe",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393522_US80303135_251485027603_S01_GE1-v5_95_Feb07_1_1.txt.gz",
+      "bytes": 7176967,
+      "sha256": "ec0fdcb9ff0cf509624ed406730e57dd858402606cdcf5684fd41b59f7bf1883",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393523_US80303135_251485027603_S01_GE1-v5_95_Feb07_1_3.txt.gz",
+      "bytes": 7080627,
+      "sha256": "6deb12c6287c1037e66b23b70e4477205ecdf86fc5451fd17173c0a3469a913c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393524_US80303135_251485027703_S01_GE1-v5_95_Feb07_1_1.txt.gz",
+      "bytes": 7176597,
+      "sha256": "71141534c5d91c1b68cafa48f153af19498686b78675aa7d2203a1ff4811ac88",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393525_US80303135_251485042667_S01_GE1-v5_95_Feb07_1_1.txt.gz",
+      "bytes": 8081845,
+      "sha256": "18be7a18482e8e8b092fa08bd845be099d0d78907a44665db686e6ca94626ee2",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/GSM3393526_US80303135_251485042667_S01_GE1-v5_95_Feb07_1_3.txt.gz",
+      "bytes": 7923664,
+      "sha256": "e6dba69c4962a3eec8be9956c95e28137cd4799c83df76b2f838b87f4252e9dd",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "data_raw/GSE120103_rawFE_v13/rawFE_retrieval_manifest.csv",
+      "bytes": 15111,
+      "sha256": "00e1df96afee75e5eb5ecaa40a075ce617b307532f2e60da82f3e2cc15a8891f",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/all_fixed_clinical_cell_counts.csv",
+      "bytes": 983,
+      "sha256": "e793379913b30ae04e073668069addda86d1d1ca1204ae1eb5e6b542b4889247",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/all_source_defined_diagnostic_gene_features.csv",
+      "bytes": 37276,
+      "sha256": "d381bbffeaf3f5677bf4b46ea59e0982657ef28d834f27492e36daee396d5cc0",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/all184_samples_fixed_global_QC_flags.csv",
+      "bytes": 52336,
+      "sha256": "96321b34ca5198244a0877715f21a34ad5d854ae41e1a9255a2a5e3a1b7a6dd0",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/all184_samples_label_blind_technical_QC.csv",
+      "bytes": 41417,
+      "sha256": "8289c602ab4cc274626bfc12fe2bb70bede4e656e46e0c1d9755e94032e0a4ba",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/all38_direct_mRNA_source_rosters_and_target_eligibility.csv",
+      "bytes": 26186,
+      "sha256": "a1bfdb9abd43949715a4e222dc16d4852bb1bcf830ef76cd94be5ae881b3ae85",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/clinical_design_and_global_QC_summary.json",
+      "bytes": 1014,
+      "sha256": "370483372e56f4d8ac99893d7be21f8336e06712233a09b1ce91f63e28f233d1",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_all_probe_mapping_and_technical_QC.csv",
+      "bytes": 1933278,
+      "sha256": "cce3d0d0bb8cccb1629823ee69700c86646cbffefc0a60fc70656aa54b9266be",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_fixed_clinical_design.csv",
+      "bytes": 14498,
+      "sha256": "11b6d50d274ba3263a8e310774bc470aabbbce44cb6cea6666f9a979ce79f9d4",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_mean_probe_gene_matrix.csv.gz",
+      "bytes": 3572893,
+      "sha256": "b93f4caea89ae68d21de1d22e670a38c91204ac5c8daf326ad89601f3ad4ad10",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_median_probe_gene_matrix.csv.gz",
+      "bytes": 3449275,
+      "sha256": "ab183079f6c115bc6a69d4e0ebc2d10816cf2316978d514015851fdf62e5115b",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_all_probe_mapping_and_technical_QC.csv",
+      "bytes": 2872387,
+      "sha256": "ceb0d9fc9f00a92f81a6a46d68b049f093163fd44adcaba539d82c3c1041dd51",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_fixed_clinical_design.csv",
+      "bytes": 47220,
+      "sha256": "e4f0463d39a1fe0fcb4e0896cbbdfd8d27a980be028059fc9d979e4d145b7a7e",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_mean_probe_gene_matrix.csv.gz",
+      "bytes": 13600573,
+      "sha256": "8a4729a5eaad5b8ebecf2bbc28f34a4cdc1657b21ef29cdca0a0a6e0b8f92a34",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_median_probe_gene_matrix.csv.gz",
+      "bytes": 12138099,
+      "sha256": "5946bda79d80218873ab18c83648b1064bf082cd7599f069f686aaced3708bc0",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/independent_source_preparation_verification_manifest.csv",
+      "bytes": 688,
+      "sha256": "17276ba00d082003e556d9548a2b8e43285221fdb22a4c0cfa8b564542caa5af",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/independent_source_preparation_verification_pre_NONENDO_expectation.json",
+      "bytes": 14750,
+      "sha256": "96db1610aa1561842278d028397c40987d54719d5d391bdd872fadd3fbe4ffe1",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/independent_source_preparation_verification.json",
+      "bytes": 15467,
+      "sha256": "f889b58ae9685e8c47ef022ec7776cfdfdcad46395eb42336dcf14e1268f84d7",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/independent_source_preparation_verification.md",
+      "bytes": 1834,
+      "sha256": "c5d9d6583874a1496782de16551157039544b3136b373459f15c8555a40b79e0",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/orgHs_all_Entrez_to_alias.csv",
+      "bytes": 6150856,
+      "sha256": "2592ced37ca7227f17dd167362a3dfe66d41181a9d7b906539d542f2afbbe992",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/orgHs_all_Entrez_to_symbol.csv",
+      "bytes": 4881208,
+      "sha256": "c3fc21371d57ffbf28a1f6dc1ed86121c64a9562ad46437ce6659b4915b99d27",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/orgHs_annotation_provenance.json",
+      "bytes": 2610,
+      "sha256": "84e22f48fd994c630b48e4c27c6d21cc2393008cf21e134a0e6ca29272b99086",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/primary_clinical_analysis_freeze.json",
+      "bytes": 13193,
+      "sha256": "d4879ea06c57a2377d42d6cde7a8feecc21e3e1456d37cc0817f6a9bf4a4cf1f",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/R_identifier_export_session.txt",
+      "bytes": 1248,
+      "sha256": "65e16e0b4a98b6c9446b081d1d5d1a71ad1e768de98f1e4b93167afba4acf64f",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/source_defined_roster_summary.json",
+      "bytes": 668,
+      "sha256": "ce0d69176c9257c00b6da83505273f76511bed5e58ba1bb59fe284ce2b97edc0",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/source_identity_or_target_unresolved_features.csv",
+      "bytes": 247,
+      "sha256": "4d9106930c75e8337285f34711c4e2761523081e6792fa4b5276854155aa15a2",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/technical_preparation_summary.json",
+      "bytes": 1431,
+      "sha256": "5ae87bb11d7f2af93d248a9503b915c7196507ddf3ade3058dda2aec1fafbccd",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/U_all_identifiable_source_admissible_genes.csv",
+      "bytes": 7326,
+      "sha256": "60a7d2c10606a440528b9724ac471a3d405af817f7aae9180222a2b796965187",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/clinical_preparation/U2_both_source_admissible_genes.csv",
+      "bytes": 5928,
+      "sha256": "6a79249a67104003eba01ae16e95c07b397f0c16ce8cea442196b68bee42b5d5",
+      "role": "immutable existing clinical_preparation input; no effect result read"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/GSE120103_raw_preparation/frozen_limma_implementation.txt",
+      "bytes": 8215,
+      "sha256": "b9b5ec8b7a267d860495936604762d0258a7fcf25689d629deca510541dbbeaf",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/GSE120103_raw_preparation/preprocessing_R_session_before_freeze.txt",
+      "bytes": 672,
+      "sha256": "a000c29bf478024c44fb26fa96c24bf7d9bb03b13af0077dcef2efff1eae453f",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/download_manifest.csv",
+      "bytes": 1275,
+      "sha256": "b3d14d8ea893bcc40e2687ba56b11a3b4d22c2b801064f9a009c242b065e7c91",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSE120103_filelist.txt",
+      "bytes": 3691,
+      "sha256": "f52836cd124239d39f5e31b42249bf942eda7ee6abcc55ced320a7bbafdff0ce",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSM_metadata_prefix_manifest.csv",
+      "bytes": 23384,
+      "sha256": "4ae66b408876127298f6a7729f8f640b005b2e58b142d73daea4db7e3ad14931",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393491_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "b2e9920c812508cd4fcc333c9ab987a4c371d968c949c04a039eac5cfa69ffde",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393492_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "b2c27f80500596932f734e5ca2bc63d4c3a6561e65fc165e277eb2260a3de734",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393493_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "6c72d1bfced7159412aa03f102305b668600eadd7818720f3a54bbf91241d0f9",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393494_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "707d1e23d47604c8b850367d843d09a1fdd01209c8a0572b53290b6bcab06c5c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393495_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "1a432d6327313f87db928c56dea782a7fd192945037995490d8c84b24e4a7275",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393496_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "be18b459254804c2eab381d43c638ac81b94105a4a448d7873d598d15a1b05d9",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393497_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "a9c77aec61e9bacbb62a4813d721da5b15a5a1a557835834b0611b63ff7d7015",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393498_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "693b42b691ebefc566f9692d94181cf932290efc853add9a128a68f11b6d5a6a",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393499_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "bd9d91f541645b4cbbf3c7999ca264a01c9735c11d235b6d9445963d6c8feda8",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393500_metadata_prefix.txt",
+      "bytes": 3833,
+      "sha256": "9972d08d2f968683f0199299dc1641622a84d8cfbca963b43501858da9f3d622",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393501_metadata_prefix.txt",
+      "bytes": 3833,
+      "sha256": "920fec958661c3a608a7496021e4c8e70726368f864818b937acdcc9b5404d45",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393502_metadata_prefix.txt",
+      "bytes": 3833,
+      "sha256": "6abdc8630be7c66b79741d27436efa6ecd34237adf55679b8d4423867f76b06d",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393503_metadata_prefix.txt",
+      "bytes": 3833,
+      "sha256": "da7f1db98b770317d0bd2b02a550c03316c7384dd89ccc40c2836281135bb6c1",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393504_metadata_prefix.txt",
+      "bytes": 3833,
+      "sha256": "1003166227337da7e932cbc2f4b48ed3407c0df19f48359683a65701a894b459",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393505_metadata_prefix.txt",
+      "bytes": 3833,
+      "sha256": "af6c8d371f65e6e41141090326c797620c12dc8f09f3498fd7701f0c07db348a",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393506_metadata_prefix.txt",
+      "bytes": 3833,
+      "sha256": "0e075e710939f89579f8ec0051c0c3c9727d7d6f37498ca3ccaa4508c5bf88df",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393507_metadata_prefix.txt",
+      "bytes": 3833,
+      "sha256": "1a27ec0724dd8dca02ad38fdb1fb3466c6ce556a842ad8d29999cd4e49322393",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393508_metadata_prefix.txt",
+      "bytes": 3833,
+      "sha256": "bd0cc36d1e219d512888a5c606c299ec68ae94a70fb694ba676cdef9b870f35c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393509_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "e3c317d2ef01edfb96a043f0e71143dea4dc6c02c5f58552c4be99dfa443e3b7",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393510_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "4bc50172704139d7d0e46e4a58f108b252940537df75867bf6645c5b77c60f06",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393511_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "ed61dc88b3b48a075e74f196b83e9e5ae826db626f7517f7ed174b1732295e7e",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393512_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "3e75ba252b220e08e648b0f6e6264fc054413400fd9409dadceca785eec2d226",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393513_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "feb259d6715524ba9ff362ab4e7115ab4a1d32c78a554f088242524f1d58c740",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393514_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "d84c5497b326b5a2478c20d9ee5be2aee615f532afb277caae6f5c0fbb6f4774",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393515_metadata_prefix.txt",
+      "bytes": 3770,
+      "sha256": "608a17ffab00784d349b6a591ecd7c2c6b3d7f7fc8a4defee311268c43c98800",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393516_metadata_prefix.txt",
+      "bytes": 3777,
+      "sha256": "de24308a497d6a089a93a474608e4ac181c543df6d38ac4a6acebf5dfab16483",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393517_metadata_prefix.txt",
+      "bytes": 3777,
+      "sha256": "2a769519a77053aa3a7383d9192161faf8aaeb0fa6896f0395876fba612bd269",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393518_metadata_prefix.txt",
+      "bytes": 3837,
+      "sha256": "5b97f531e3c8316fae157f3238bb2dab083b7207b4e582157e4de21785587d7a",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393519_metadata_prefix.txt",
+      "bytes": 3837,
+      "sha256": "8792c05fe5b36f95c07f496a7afdd048ce0efa26544a2a36f3ea9d0c574edc4d",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393520_metadata_prefix.txt",
+      "bytes": 3837,
+      "sha256": "27c6b00a2fa86dcdfdeea6a4e05a51f016ebd06a9d7d1c572e1f9344436880e0",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393521_metadata_prefix.txt",
+      "bytes": 3837,
+      "sha256": "389168ff5e56a4fba5645a8b4368791134804429c7b11853c33baffcf87f0b87",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393522_metadata_prefix.txt",
+      "bytes": 3839,
+      "sha256": "d186cba88610832cd655f7d6d101e9994fa41b90616b81c8b3f7a0f9ad2559c6",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393523_metadata_prefix.txt",
+      "bytes": 3839,
+      "sha256": "81a6d58905f3ef9e86c3b37c632d2092cffc82f0a50148e467ad2e1b74ef377d",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393524_metadata_prefix.txt",
+      "bytes": 3839,
+      "sha256": "930f630e5c460d6d8f8db95507a01ce250be220d66398394958fde2657bd3a4f",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393525_metadata_prefix.txt",
+      "bytes": 3839,
+      "sha256": "87c87a5af1048f93a51129d58e698b19749cbc8b92041c4cea80b706d1286e46",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/gsm_metadata_prefix/GSM3393526_metadata_prefix.txt",
+      "bytes": 3839,
+      "sha256": "dc961e30db6719be07c9725f8c9c3804bba1967c766f5bf2447af8cc99573f4b",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSM3393491_brief.txt",
+      "bytes": 3699,
+      "sha256": "e6ed0ea4b13bba83ac6438e0db060a6baea97dc22dfba2f6e3c515aa4276f14c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSM3393491_feature_identity_reference.tsv.gz",
+      "bytes": 279030,
+      "sha256": "aa4bb9a24a956f271a0214e63479e6357cc8485163e540896d5d5f9e8cce9291",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSM3393522_brief.txt",
+      "bytes": 3768,
+      "sha256": "7db11470580303301576e1d61662049575e245a65dd87970ed44f735bf848b2a",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSM3393522_independent_raw_copy_check.csv",
+      "bytes": 515,
+      "sha256": "46119d4e482049e71a2ac5a32201f1550a51b16735c86573c8ba55d098dfe97d",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSM3393523_independent_raw_copy_check.csv",
+      "bytes": 405,
+      "sha256": "6b05537c4328d30c351b1351723561080832903029ca603e3e3589e1394147e8",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSM3393523_independent_raw_range_check.csv",
+      "bytes": 532,
+      "sha256": "1f9a0c8e1069e60aef7cc72feca1742b58a661b33443f060af3a1ecba958b047",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSM3393525_brief.txt",
+      "bytes": 3768,
+      "sha256": "9e150fffb0e5092660f3030c7a534ef2f7430f69604d7212414d283c18551d3c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/GSM3393526_brief.txt",
+      "bytes": 3768,
+      "sha256": "6a515fd2d4764ddfc904498590dba109d84a64af9487b7240d7b59d243376cad",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/PMC6375207_12958_2019_465_MOESM2_ESM.docx",
+      "bytes": 44739,
+      "sha256": "30dacb453666e89794c35dfb28f08be2af7bffa88dff66315d61cccc6cf5e534",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_FEPARAMS_inventory.csv",
+      "bytes": 82529,
+      "sha256": "8ebca72841d3a1a55a74775f3320078f7c8a50938a9f36f9551e5aa0cffd4c0e",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_HEAD_checks.csv",
+      "bytes": 1410,
+      "sha256": "9212235ea6838120245e51957ea13f69cf5253571dce288725d37dad1bfb1ec4",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393491_raw_header.txt",
+      "bytes": 6190,
+      "sha256": "c2024820a7fc6ace31e79657e047a90319accbf616cb5d1eaf649d3c3748776f",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393492_raw_header.txt",
+      "bytes": 6179,
+      "sha256": "0752ecab21b9fb3280f0f4d56b1f1975b031f248c0db018668df8b770e4133c8",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393493_raw_header.txt",
+      "bytes": 6184,
+      "sha256": "422601538f8ee6a9d7c01886139a0efb5690cb7ffb7273a53e9a79c4774604ba",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393494_raw_header.txt",
+      "bytes": 6177,
+      "sha256": "87b28a07f54ce1f0121c6a5792769bb59b46619e809532fa370e459ef22509bc",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393495_raw_header.txt",
+      "bytes": 6185,
+      "sha256": "33591ad72daa2ca0c434513de4cac68543b325000c1314ffdfc702e19b3f8796",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393496_raw_header.txt",
+      "bytes": 6187,
+      "sha256": "6dc77138dbed1d53326cfd53f3a8b31b11e10c68a7bd448acc97deb0cd32613f",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393497_raw_header.txt",
+      "bytes": 6184,
+      "sha256": "7a596a4d68bc8bffd27c8b1379f48cf1bd971ae00b2a5da9702d6378665f1e1b",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393498_raw_header.txt",
+      "bytes": 6194,
+      "sha256": "15a6e905d6a7b7d35c3129b75b9044ff26eb9a0eb7ed9b1e50ee6a84f35e565a",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393499_raw_header.txt",
+      "bytes": 6191,
+      "sha256": "8ebcdcae9c207272a07fc65908e5cb8ccdea1428c56c27cf2bfd99110eeda514",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393500_raw_header.txt",
+      "bytes": 6197,
+      "sha256": "2ca4325718aede8ed7321ab738f4880a3352baa57cf9d0b9a91877c52b2bd7d7",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393501_raw_header.txt",
+      "bytes": 6172,
+      "sha256": "356beefcfeb1341f30488ab9b6bd5cdbfbc9aec54bed11e0cdb1432b34b44dc2",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393502_raw_header.txt",
+      "bytes": 6172,
+      "sha256": "ad6b4a1b9bf5e4d841165a7428c618ef4ed7bfa70a06dc83b9df06ee28fd7eb3",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393503_raw_header.txt",
+      "bytes": 6192,
+      "sha256": "ebcf18983136002b771d9528a768ab98ca05da126ef228d2f7989170807fd19c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393504_raw_header.txt",
+      "bytes": 6197,
+      "sha256": "a06f13d83ce498b67c48d042b44dc1d9a36631beed1f231277e97f55d2f87ae4",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393505_raw_header.txt",
+      "bytes": 6205,
+      "sha256": "1ff8526033830fd45cf0fee2697dfa1ca01946a9c40aabad9f75e3878e110526",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393506_raw_header.txt",
+      "bytes": 6191,
+      "sha256": "ea6568e4643fcc33e36a6f3170ed3d9cf0c14b20818027de9dbbd26114b718f5",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393507_raw_header.txt",
+      "bytes": 6192,
+      "sha256": "469f58eaff3677c2b484c96a1f3379a22abd0b41edc20229ebfe70f0a2b1a4f5",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393508_raw_header.txt",
+      "bytes": 6180,
+      "sha256": "ba9aa100b26e4d5d2a7510879085568d7ff91c7d324154c20a976d66a6a30f49",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393509_raw_header.txt",
+      "bytes": 6302,
+      "sha256": "ff267117985ec4bb5b40df5cb1a405adacc177c1bfc108d8d3001205ce3c1a43",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393510_raw_header.txt",
+      "bytes": 6308,
+      "sha256": "3e93591c2199ad15589eadf0b76ac3dc95d6bff51571ad62f57782067d3fb34b",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393511_raw_header.txt",
+      "bytes": 6307,
+      "sha256": "7e373b15b1cdfc143163f4fa6f99423436591133dcccabcf416abd30e90e1785",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393512_raw_header.txt",
+      "bytes": 6301,
+      "sha256": "f3e991dfcb631c3cc933959cbd7766e9ee174bdb66e6ebba470104bd96cc4064",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393513_raw_header.txt",
+      "bytes": 6300,
+      "sha256": "05b6e757dd6ba3df8d06b971c26351bde2dcd86220b303dc03acca69b36cc39d",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393514_raw_header.txt",
+      "bytes": 6291,
+      "sha256": "887f8776a0b0f15cebbd365f0e361034cd2d4b8937de83bd450393ea0a0ff728",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393515_raw_header.txt",
+      "bytes": 6297,
+      "sha256": "943e9ef65d08094fe4bc7a64afe14b265d51a2ad2f7ce9f2288c9901918c5c9e",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393516_raw_header.txt",
+      "bytes": 6198,
+      "sha256": "d4cb1a5f9b01bebc1555888b9ea3fe0f21ca6a533a276b06545902b44a50b4c1",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393517_raw_header.txt",
+      "bytes": 6158,
+      "sha256": "8d938349e2beb5ac0a89c5dc07735676f978ea6f89ffe45ec810bc9951dfed7c",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393518_raw_header.txt",
+      "bytes": 6200,
+      "sha256": "7161f1e7a94b1fdf3f093f6de6192a3e96a858714c5d9f58a92accea88d1c950",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393519_raw_header.txt",
+      "bytes": 6191,
+      "sha256": "9a92c483353ef82497fc866c19996898297f4cf5b05762dde908f75a80f799b1",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393520_raw_header.txt",
+      "bytes": 6188,
+      "sha256": "28e292f1a5a48a852ce31d2cfe363aa7703fe146352c538fded962665377f880",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393521_raw_header.txt",
+      "bytes": 6184,
+      "sha256": "8b6270e2a8373e807346dd6cf051a3b9c678aef8793dfb896cc9a0ed9f21dd52",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393522_raw_header.txt",
+      "bytes": 10218,
+      "sha256": "7b6e6062e3d7c32d31323dbf6050ffcc0968787e02b00e37f02351e1ccf97782",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393523_raw_header.txt",
+      "bytes": 10229,
+      "sha256": "0bc965110acfe82c28616067b8b9c727cfecf5b6d61bff8e1aca3e67e5c4eae7",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393524_raw_header.txt",
+      "bytes": 10215,
+      "sha256": "50efcf562e1584977136a902021ebbed8f776638df6399712021c5324d716126",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393525_raw_header.txt",
+      "bytes": 10241,
+      "sha256": "133efec14f189ba244cb96261541b3b804ed0fc88d1e180da2c5fab3227e1f6f",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_headers/GSM3393526_raw_header.txt",
+      "bytes": 10241,
+      "sha256": "d579899ecc7f125a15dc3fb3a96382a2d48d79e72f3007e46f886a7b839ef9d2",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_schema_inventory.csv",
+      "bytes": 92314,
+      "sha256": "79a770da523f305cbc8850aebfa87920a7eb5ca1d71a1b6732f6ede759e3291d",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_processing_sources/raw_FE_structural_anomalies.csv",
+      "bytes": 360,
+      "sha256": "24483b1b6827e931f176cb3f1016048246d302648f4856f642d8e2745a019a12",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_source_processing_followup.csv",
+      "bytes": 103222,
+      "sha256": "60f295e9501efde177dfb74dac672c849a0bfa0830d4cb8649536df2dc47b469",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "outputs/biomarker_transfer_v13/phase2_investigation/GSE120103_source_processing_followup.md",
+      "bytes": 8453,
+      "sha256": "c0a050f643ebe96c4d997fa931025a7d2269d57a821518c7cc9d3685b9782717",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "runtime/R-library/limma/DESCRIPTION",
+      "bytes": 4896,
+      "sha256": "f7102f0be29207f05d69fe8d3649331cae3dc0ba3e0c63f54e9318975fc26efc",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "runtime/R-library/limma/R/limma.rdb",
+      "bytes": 964891,
+      "sha256": "669ac5009a7be0c1ee1f3cb4486dfaa33c695ad495e7bdfa65c17b1b2fdac4cf",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "runtime/R-library/limma/R/limma.rdx",
+      "bytes": 5546,
+      "sha256": "6628a230d8610aa5d6f60a81c44172a7fe89e45ba797d974a01d4244f8e02156",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "runtime/R-library/org.Hs.eg.db/extdata/org.Hs.eg.sqlite",
+      "bytes": 417669120,
+      "sha256": "bbdf1a4d9181ac0873d8993b6c25742d6658eaa6c14a10b2df1a19dfba1f3dba",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "scripts/128_reprocess_GSE120103_raw_Agilent.R",
+      "bytes": 23926,
+      "sha256": "094edc066ea83b6256088addc16b5ef0ca7162f83d65fd731c5d31b2e74be88f",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "scripts/GSE120103_rawFE_download_v13.py",
+      "bytes": 4075,
+      "sha256": "7e4f293d9c60f3cd184b12ca2fd4e14fae6b51caf0c9562b1818eb4ea4012eb7",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "scripts/GSE120103_rawFE_schema_inventory_v13.py",
+      "bytes": 7355,
+      "sha256": "9adcf9e4e7be98147a9e65ef5c9b43e483c3f43c38428f3182856a9c5d34fa2e",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "sources/biomarker_transfer_v13/clinical_inputs/GPL6480.annot.gz",
+      "bytes": 7380104,
+      "sha256": "aacec81b2d95f183f0827b43e769388a92917811b81920c13ecc8fe148c5a3ab",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "sources/biomarker_transfer_v13/clinical_inputs/GSE120103_series_matrix.txt.gz",
+      "bytes": 6689626,
+      "sha256": "0ab4900ba460232b1c76ca25028b3a034dd50491d3a7e63d4bf2fa2c4afbc16e",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "sources/biomarker_transfer_v13/clinical_inputs/retrieval.json",
+      "bytes": 5863,
+      "sha256": "724475bc5c8df22eae495e2af6f111b6ed7bfe94b8097f40d1eafdf278bc2a08",
+      "role": "frozen raw/source/implementation/identifier input"
+    },
+    {
+      "path": "sources/endometriosis_resource_audit_v8/PMC6375207.xml",
+      "bytes": 122753,
+      "sha256": "d87bb75433f395df9807b8f26b9210f2f03669fcfd4276b8c3b8947d8fc0a07c",
+      "role": "frozen raw/source/implementation/identifier input"
+    }
+  ],
+  "clinical_preparation_immutable": true,
+  "source_matrix_read_permission": "Hash only; no numerical source matrix used in raw arm",
+  "independently_reviewed": false
+}

@@ -1,0 +1,23 @@
+{
+  "figure2_identity.R": {
+    "original": "118_plot_raw_measurement_identity.R",
+    "original_sha256": "dee4e22b4d1c10498c48324175dbb054c5473cd8dddd9ccb99f9e6d9b8c0cbe0",
+    "adaptation": "Read shipped frozen source tables; project-local outputs; optional R library; base PDF device replaces macOS-only Quartz. Plot geometry, labels and inferential selections unchanged."
+  },
+  "figure3_comparators.R": {
+    "original": "129_plot_clinical_comparator_robustness.R",
+    "original_sha256": "ff1cedef7709e4c40bf734e672299f731885dd7f4b71f26c3a4a84bbda761f0d",
+    "adaptation": "Read shipped frozen source tables; project-local outputs; optional R library; base PDF device replaces macOS-only Quartz. Plot geometry, labels and inferential selections unchanged."
+  },
+  "figure4_joint.R": {
+    "original": "135_plot_second_cohort_joint_associations.R",
+    "original_sha256": "0150929543750181991cb7c66fa6516c79fc624ebc80bcf45ee28bc417e498d9",
+    "adaptation": "Read shipped frozen source tables; project-local outputs; optional R library; base PDF device replaces macOS-only Quartz. Plot geometry, labels and inferential selections unchanged."
+  },
+  "figure1_workflow.R": {
+    "original": "138_plot_study_workflow.R",
+    "original_sha256": "31d31808100cba5296ff7f1d0f061733e35f16b44445649e499c65ed5184ab65",
+    "adaptation": "Read shipped frozen source tables; project-local outputs; optional R library; base PDF device replaces macOS-only Quartz. Plot geometry, labels and inferential selections unchanged."
+  },
+  "public_pdf_device": "Cairo PDF when supported by R build, otherwise base PDF; editable SVG always exported"
+}

@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "cohort": "primary",
+      "rows": 471,
+      "numeric_values": 4695,
+      "max_absolute_error": 1.0671463712697005e-12,
+      "passed": true
+    },
+    {
+      "cohort": "secondary",
+      "rows": 1428,
+      "numeric_values": 14060,
+      "max_absolute_error": 8.859579736508749e-14,
+      "passed": true
+    }
+  ],
+  "absolute_tolerance": 2e-10,
+  "relative_tolerance": 2e-09
+}

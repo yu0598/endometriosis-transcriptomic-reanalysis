@@ -1,0 +1,28 @@
+{
+  "title": "Endometriosis transcriptomic reanalysis: source audit and sample-level gene associations",
+  "upload_type": "software",
+  "description": "Fixed processed-input reproducibility package for source auditing and sample-level reanalysis of published endometriosis transcriptomic features. Includes nine fixed model fits, separate HC3 sensitivities, four R figure scripts, exact processed matrices, reference tables and provenance records. No diagnostic classifier or AUC analysis. Original code is MIT licensed; third-party source data retain their terms, detailed in DATA_LICENSE.md.",
+  "creators": [
+    {
+      "name": "Yu, Huafeng",
+      "affiliation": "Zhujiang Hospital, Southern Medical University",
+      "orcid": "0009-0005-9020-1272"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "endometriosis",
+    "transcriptomics",
+    "reproducibility",
+    "provenance"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/yu0598/endometriosis-transcriptomic-reanalysis",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

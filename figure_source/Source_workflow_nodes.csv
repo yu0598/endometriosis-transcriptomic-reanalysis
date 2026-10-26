@@ -1,0 +1,23 @@
+"id","branch","x","y","width","height","title","body","source_n","gene_family_n"
+"a1","Published features",32,139,54,14,"130 targeted public records","Directed corpus; source review",130,NA
+"a2","Published features",32,118,54,14,"38 identifiable mRNA claim records","Published evaluated features / stages",38,NA
+"a3","Published features",32,96,54,17,"35 supporting sources | U = 157","New GSE51981 source support
+1 prior-use + 2 historic restrictions excluded",35,157
+"a4","Published features",32,74,54,15,"29 supporting sources | U2 = 119","Source support for both target cohorts",29,119
+"a5","Published features",32,35,54,40,"92 records not advanced","7 nonresearch
+48 scope exclusions
+35 prior-use records:
+diagnostic scope not reassessed
+1 unclear diagnostic target
+1 retracted record",92,NA
+"b1","Measurement archives",92,139,54,15,"61 fixed CEL records","20 GSE7305 + 41 selected GSE7307",61,NA
+"b2","Measurement archives",92,116,54,17,"42 distinct raw measurements","19 exact cross-series duplicate pairs",42,NA
+"b3","Measurement archives",92,73,54,15,"36 public Agilent FE files","Separate GSE120103 raw archive",36,NA
+"b4","Measurement archives",92,50,54,16,"34 complete raw files","2 structurally defective payloads excluded",34,NA
+"c1","Clinical estimands",153,137,54,21,"GSE51981: 148 source profiles","144 primary; 9 group-by-phase cells
+75 ENDO / 34 NUPP / 35 UPP",148,157
+"c2","Clinical estimands",153,105,54,22,"GSE120103: 34 raw profiles","4 disease-by-fertility cells: 9/9/9/7
+Source 36 and QC 32 sensitivities",34,119
+"c3","Clinical estimands",153,67,54,26,"Fixed marginal-mean families","U = 157: GSE51981 clinical contrasts
+U2 = 119: second-cohort means
+and same-direction joint association",NA,119

@@ -1,0 +1,386 @@
+{
+  "verified_at_utc": "2026-10-26T09:48:19.516679+00:00",
+  "result": "PASS",
+  "implementation": "Independent stdlib CSV/gzip/SQLite + NumPy per-gene mean/median; no pandas/groupby.",
+  "absolute_tolerance": 5e-12,
+  "relative_tolerance": 1e-13,
+  "robust_z_absolute_tolerance": 1e-10,
+  "cohorts": [
+    {
+      "series": "GSE51981",
+      "platform": "GPL570",
+      "probe_rows": 54675,
+      "samples": 148,
+      "valid_unique_ID_probes": 42904,
+      "unique_gene_rows": 20848,
+      "aggregation": {
+        "mean": {
+          "genes": 20848,
+          "values_checked": 3085504,
+          "maximum_absolute_error": 3.552713678800501e-15,
+          "failed_gene_rows": []
+        },
+        "median": {
+          "genes": 20848,
+          "values_checked": 3085504,
+          "maximum_absolute_error": 0.0,
+          "failed_gene_rows": []
+        }
+      },
+      "global_QC_flagged_samples": []
+    },
+    {
+      "series": "GSE120103",
+      "platform": "GPL6480",
+      "probe_rows": 37914,
+      "samples": 36,
+      "valid_unique_ID_probes": 28349,
+      "unique_gene_rows": 18648,
+      "aggregation": {
+        "mean": {
+          "genes": 18648,
+          "values_checked": 671328,
+          "maximum_absolute_error": 1.7763568394002505e-15,
+          "failed_gene_rows": []
+        },
+        "median": {
+          "genes": 18648,
+          "values_checked": 671328,
+          "maximum_absolute_error": 0.0,
+          "failed_gene_rows": []
+        }
+      },
+      "global_QC_flagged_samples": [
+        "GSM3393522",
+        "GSM3393523",
+        "GSM3393524",
+        "GSM3393526"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "check": "GSE51981_whole_gzip_integrity",
+      "passed": true,
+      "compressed_bytes": 27099296,
+      "compressed_sha256": "810e560c2b10dabb2f92dde03f64a2f9af4d72d51360f29c102569942dd84211",
+      "uncompressed_bytes": 97520728,
+      "uncompressed_sha256": "f5e9fcda7bc8c43b3475e3fcb131ae82e1c4715b4215d7522262a1f4fb4da284",
+      "gzip_crc32": "0xad9640e8",
+      "official_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE51nnn/GSE51981/matrix/GSE51981_series_matrix.txt.gz"
+    },
+    {
+      "check": "GSE120103_whole_gzip_integrity",
+      "passed": true,
+      "compressed_bytes": 6689626,
+      "compressed_sha256": "0ab4900ba460232b1c76ca25028b3a034dd50491d3a7e63d4bf2fa2c4afbc16e",
+      "uncompressed_bytes": 15476265,
+      "uncompressed_sha256": "bb2ac37e12c65011a2e9b11d66a88e520f1ea7ea12c10e3777d4e02967079898",
+      "gzip_crc32": "0xbc48f9cc",
+      "official_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE120nnn/GSE120103/matrix/GSE120103_series_matrix.txt.gz"
+    },
+    {
+      "check": "GPL570_whole_gzip_integrity",
+      "passed": true,
+      "compressed_bytes": 8471521,
+      "compressed_sha256": "d7cd44352127b1e34f3a720ebea86093ef255a38f1612a85a2962b71bde8f394",
+      "uncompressed_bytes": 39459873,
+      "uncompressed_sha256": "67f6a717077733d156e7445e33ef156eec89abb46084a4aa12a89c1909c17c80",
+      "gzip_crc32": "0xb47f14c9",
+      "official_url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPLnnn/GPL570/annot/GPL570.annot.gz"
+    },
+    {
+      "check": "GPL6480_whole_gzip_integrity",
+      "passed": true,
+      "compressed_bytes": 7380104,
+      "compressed_sha256": "aacec81b2d95f183f0827b43e769388a92917811b81920c13ecc8fe148c5a3ab",
+      "uncompressed_bytes": 29079208,
+      "uncompressed_sha256": "df00f0f4ac018730f6fcfe0407b6d74994a928daff48e1f25891412ffa90c1ca",
+      "gzip_crc32": "0x60f7ea92",
+      "official_url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL6nnn/GPL6480/annot/GPL6480.annot.gz"
+    },
+    {
+      "check": "GSE51981_original_metadata_header",
+      "passed": true
+    },
+    {
+      "check": "GSE51981_matrix_dimensions_and_order",
+      "passed": true,
+      "shape": [
+        54675,
+        148
+      ],
+      "all_finite": true
+    },
+    {
+      "check": "GSE51981_official_platform_mapping_every_probe",
+      "passed": true,
+      "mapping_mismatches": [],
+      "probe_counts": {
+        "multi_or_empty": 11771,
+        "unique": 42904
+      },
+      "max_SD_error": 4.6629367034256575e-15,
+      "method": "Fresh official GPL CSV parsed with stdlib; unique numeric Gene ID derived independently; generated mapping used only for comparison."
+    },
+    {
+      "check": "GSE51981_mean_every_aggregation_value",
+      "passed": true,
+      "genes": 20848,
+      "values_checked": 3085504,
+      "maximum_absolute_error": 3.552713678800501e-15,
+      "failed_gene_rows": [],
+      "method": "Independent NumPy per-gene indexed blocks; no pandas or groupby."
+    },
+    {
+      "check": "GSE51981_median_every_aggregation_value",
+      "passed": true,
+      "genes": 20848,
+      "values_checked": 3085504,
+      "maximum_absolute_error": 0.0,
+      "failed_gene_rows": [],
+      "method": "Independent NumPy per-gene indexed blocks; no pandas or groupby."
+    },
+    {
+      "check": "GSE51981_sample_distribution_QC",
+      "passed": true,
+      "mismatched_samples": [],
+      "independent_float_parser_fingerprint_mismatches": [],
+      "exact_duplicate_columns": []
+    },
+    {
+      "check": "GSE51981_independent_global_QC_flags",
+      "passed": true,
+      "flagged_samples": [],
+      "center": {
+        "median": 3.0356238529999997,
+        "IQR": 4.619881708
+      },
+      "scaled_MAD": {
+        "median": 0.06801014225249993,
+        "IQR": 0.3116055661950006
+      },
+      "mismatch_samples": []
+    },
+    {
+      "check": "GSE51981_clinical_labels_from_original_series_header",
+      "passed": true,
+      "mismatch_samples": [],
+      "source_name_fertility_conflict_samples": [],
+      "cell_counts": {
+        "primary": {
+          "ENDO_ESE": 18,
+          "ENDO_P": 29,
+          "ENDO_MSE": 28,
+          "NUPP_P": 20,
+          "NUPP_ESE": 6,
+          "NUPP_MSE": 8,
+          "UPP_MSE": 14,
+          "UPP_P": 15,
+          "UPP_ESE": 6
+        },
+        "global_QC_sensitivity": {
+          "ENDO_ESE": 18,
+          "ENDO_P": 29,
+          "ENDO_MSE": 28,
+          "NUPP_P": 20,
+          "NUPP_ESE": 6,
+          "NUPP_MSE": 8,
+          "UPP_MSE": 14,
+          "UPP_P": 15,
+          "UPP_ESE": 6
+        }
+      },
+      "GSE120103_NONENDO_caveat": "Disease-free comparator label; does not certify no other pelvic/uterine pathology."
+    },
+    {
+      "check": "GSE120103_original_metadata_header",
+      "passed": true
+    },
+    {
+      "check": "GSE120103_matrix_dimensions_and_order",
+      "passed": true,
+      "shape": [
+        37914,
+        36
+      ],
+      "all_finite": true
+    },
+    {
+      "check": "GSE120103_official_platform_mapping_every_probe",
+      "passed": true,
+      "mapping_mismatches": [],
+      "probe_counts": {
+        "multi_or_empty": 9565,
+        "unique": 28349
+      },
+      "max_SD_error": 1.7763568394002505e-15,
+      "method": "Fresh official GPL CSV parsed with stdlib; unique numeric Gene ID derived independently; generated mapping used only for comparison."
+    },
+    {
+      "check": "GSE120103_mean_every_aggregation_value",
+      "passed": true,
+      "genes": 18648,
+      "values_checked": 671328,
+      "maximum_absolute_error": 1.7763568394002505e-15,
+      "failed_gene_rows": [],
+      "method": "Independent NumPy per-gene indexed blocks; no pandas or groupby."
+    },
+    {
+      "check": "GSE120103_median_every_aggregation_value",
+      "passed": true,
+      "genes": 18648,
+      "values_checked": 671328,
+      "maximum_absolute_error": 0.0,
+      "failed_gene_rows": [],
+      "method": "Independent NumPy per-gene indexed blocks; no pandas or groupby."
+    },
+    {
+      "check": "GSE120103_sample_distribution_QC",
+      "passed": true,
+      "mismatched_samples": [],
+      "independent_float_parser_fingerprint_mismatches": [],
+      "exact_duplicate_columns": []
+    },
+    {
+      "check": "GSE120103_independent_global_QC_flags",
+      "passed": true,
+      "flagged_samples": [
+        "GSM3393522",
+        "GSM3393523",
+        "GSM3393524",
+        "GSM3393526"
+      ],
+      "center": {
+        "median": -0.05661010725,
+        "IQR": 1.4887886
+      },
+      "scaled_MAD": {
+        "median": 0.20192651023965,
+        "IQR": 0.5209525298354998
+      },
+      "mismatch_samples": []
+    },
+    {
+      "check": "GSE120103_clinical_labels_from_original_series_header",
+      "passed": true,
+      "mismatch_samples": [],
+      "source_name_fertility_conflict_samples": [
+        "GSM3393518",
+        "GSM3393519",
+        "GSM3393520",
+        "GSM3393521",
+        "GSM3393522",
+        "GSM3393523",
+        "GSM3393524",
+        "GSM3393525",
+        "GSM3393526"
+      ],
+      "cell_counts": {
+        "primary": {
+          "NONENDO_Fertile": 9,
+          "ENDO_Fertile": 9,
+          "NONENDO_Infertile": 9,
+          "ENDO_Infertile": 9
+        },
+        "global_QC_sensitivity": {
+          "NONENDO_Fertile": 9,
+          "ENDO_Fertile": 9,
+          "NONENDO_Infertile": 9,
+          "ENDO_Infertile": 5
+        }
+      },
+      "GSE120103_NONENDO_caveat": "Disease-free comparator label; does not certify no other pelvic/uterine pathology."
+    },
+    {
+      "check": "all_exported_clinical_cell_counts",
+      "passed": true
+    },
+    {
+      "check": "canonical_annotation_SQLite_SHA",
+      "passed": true,
+      "sha256": "bbdf1a4d9181ac0873d8993b6c25742d6658eaa6c14a10b2df1a19dfba1f3dba"
+    },
+    {
+      "check": "canonical_symbol_export_every_SQLite_pair",
+      "passed": true,
+      "rows": 193797
+    },
+    {
+      "check": "canonical_alias_export_every_SQLite_pair",
+      "passed": true,
+      "rows": 267675
+    },
+    {
+      "check": "all_feature_canonical_IDs_from_SQLite",
+      "passed": true,
+      "source_gene_pairs": 193,
+      "mismatches": []
+    },
+    {
+      "check": "U_all_identifiable_source_admissible_genes.csv_canonical_identifiers",
+      "passed": true,
+      "genes": 157,
+      "mismatches": [],
+      "scope": "Identifier/export consistency only; source eligibility independently checked elsewhere."
+    },
+    {
+      "check": "U2_both_source_admissible_genes.csv_canonical_identifiers",
+      "passed": true,
+      "genes": 119,
+      "mismatches": [],
+      "scope": "Identifier/export consistency only; source eligibility independently checked elsewhere."
+    },
+    {
+      "check": "checked_files_unchanged_during_verification",
+      "passed": true,
+      "changed_files": []
+    },
+    {
+      "check": "input_and_gene_matrix_bytes_unchanged_since_label_clarification",
+      "passed": true,
+      "checked_files": [
+        "sources/biomarker_transfer_v13/clinical_inputs/GSE51981_series_matrix.txt.gz",
+        "sources/biomarker_transfer_v13/clinical_inputs/GSE120103_series_matrix.txt.gz",
+        "sources/biomarker_transfer_v13/clinical_inputs/GPL570.annot.gz",
+        "sources/biomarker_transfer_v13/clinical_inputs/GPL6480.annot.gz",
+        "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_mean_probe_gene_matrix.csv.gz",
+        "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_median_probe_gene_matrix.csv.gz",
+        "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_mean_probe_gene_matrix.csv.gz",
+        "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_median_probe_gene_matrix.csv.gz"
+      ],
+      "note": "Initial verification expected the former NUPP label for120103; latest stable metadata use NONENDO. Only that expected naming policy was updated."
+    }
+  ],
+  "input_and_export_hashes": {
+    "sources/biomarker_transfer_v13/clinical_inputs/GSE51981_series_matrix.txt.gz": "810e560c2b10dabb2f92dde03f64a2f9af4d72d51360f29c102569942dd84211",
+    "sources/biomarker_transfer_v13/clinical_inputs/GSE120103_series_matrix.txt.gz": "0ab4900ba460232b1c76ca25028b3a034dd50491d3a7e63d4bf2fa2c4afbc16e",
+    "sources/biomarker_transfer_v13/clinical_inputs/GPL570.annot.gz": "d7cd44352127b1e34f3a720ebea86093ef255a38f1612a85a2962b71bde8f394",
+    "sources/biomarker_transfer_v13/clinical_inputs/GPL6480.annot.gz": "aacec81b2d95f183f0827b43e769388a92917811b81920c13ecc8fe148c5a3ab",
+    "outputs/biomarker_transfer_v13/clinical_preparation/all184_samples_label_blind_technical_QC.csv": "8289c602ab4cc274626bfc12fe2bb70bede4e656e46e0c1d9755e94032e0a4ba",
+    "outputs/biomarker_transfer_v13/clinical_preparation/all184_samples_fixed_global_QC_flags.csv": "96321b34ca5198244a0877715f21a34ad5d854ae41e1a9255a2a5e3a1b7a6dd0",
+    "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_all_probe_mapping_and_technical_QC.csv": "ceb0d9fc9f00a92f81a6a46d68b049f093163fd44adcaba539d82c3c1041dd51",
+    "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_mean_probe_gene_matrix.csv.gz": "8a4729a5eaad5b8ebecf2bbc28f34a4cdc1657b21ef29cdca0a0a6e0b8f92a34",
+    "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_median_probe_gene_matrix.csv.gz": "5946bda79d80218873ab18c83648b1064bf082cd7599f069f686aaced3708bc0",
+    "outputs/biomarker_transfer_v13/clinical_preparation/GSE51981_fixed_clinical_design.csv": "e4f0463d39a1fe0fcb4e0896cbbdfd8d27a980be028059fc9d979e4d145b7a7e",
+    "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_all_probe_mapping_and_technical_QC.csv": "cce3d0d0bb8cccb1629823ee69700c86646cbffefc0a60fc70656aa54b9266be",
+    "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_mean_probe_gene_matrix.csv.gz": "b93f4caea89ae68d21de1d22e670a38c91204ac5c8daf326ad89601f3ad4ad10",
+    "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_median_probe_gene_matrix.csv.gz": "ab183079f6c115bc6a69d4e0ebc2d10816cf2316978d514015851fdf62e5115b",
+    "outputs/biomarker_transfer_v13/clinical_preparation/GSE120103_fixed_clinical_design.csv": "11b6d50d274ba3263a8e310774bc470aabbbce44cb6cea6666f9a979ce79f9d4",
+    "outputs/biomarker_transfer_v13/clinical_preparation/all_fixed_clinical_cell_counts.csv": "e793379913b30ae04e073668069addda86d1d1ca1204ae1eb5e6b542b4889247",
+    "outputs/biomarker_transfer_v13/clinical_preparation/orgHs_all_Entrez_to_symbol.csv": "c3fc21371d57ffbf28a1f6dc1ed86121c64a9562ad46437ce6659b4915b99d27",
+    "outputs/biomarker_transfer_v13/clinical_preparation/orgHs_all_Entrez_to_alias.csv": "2592ced37ca7227f17dd167362a3dfe66d41181a9d7b906539d542f2afbbe992",
+    "outputs/biomarker_transfer_v13/clinical_preparation/all_source_defined_diagnostic_gene_features.csv": "d381bbffeaf3f5677bf4b46ea59e0982657ef28d834f27492e36daee396d5cc0",
+    "outputs/biomarker_transfer_v13/clinical_preparation/U_all_identifiable_source_admissible_genes.csv": "60a7d2c10606a440528b9724ac471a3d405af817f7aae9180222a2b796965187",
+    "outputs/biomarker_transfer_v13/clinical_preparation/U2_both_source_admissible_genes.csv": "6a79249a67104003eba01ae16e95c07b397f0c16ce8cea442196b68bee42b5d5"
+  },
+  "script_sha256": "0f2fa2d65a61e2494e81d488b22518bc0d60da06a0b724306da7d50cf1214226",
+  "own_group_contrasts_run": false,
+  "candidate_effect_selection_run": false,
+  "validation_limits": [
+    "Checks concern the source-processed matrices, not raw-platform normalization reproduction.",
+    "Floating-point comparison allows machine-rounding differences between parsers and reduction algorithms.",
+    "GSE120103 NONENDO denotes the source disease-free comparator, not absence of all other pathology."
+  ],
+  "rerun_history": "Initial run verified numerical inputs but compared latest NONENDO tables with former NUPP expectation; archived initial report preserved. Final rerun uses clarified source-label policy."
+}

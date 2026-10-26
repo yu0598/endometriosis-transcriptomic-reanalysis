@@ -1,0 +1,12 @@
+[
+  {
+    "script": "run_primary.R",
+    "change": "Bootstrap, library path, data/results paths and manifest verification only",
+    "unchanged_statistics": "Entire text from U <- read.csv through end is byte-identical to frozen125"
+  },
+  {
+    "script": "run_secondary.R",
+    "change": "Bootstrap/library/data/results/audit paths; replace original preflight/freeze I/O branches with shipped-input verification",
+    "unchanged_statistics": "Parameters, mode definitions, build_design and entire main function are byte-identical to frozen130"
+  }
+]

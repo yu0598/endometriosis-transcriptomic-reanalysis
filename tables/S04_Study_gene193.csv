@@ -1,0 +1,194 @@
+pmcid,original_symbol,source_admissible_new51981,source_admissible_both,source_evaluation_stage,stage_notes,identifier_method,Entrez_ID,canonical_symbol,identifier_resolved
+PMC10034389,MAP7,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,9053,MAP7,True
+PMC10034389,GRHL2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,79977,GRHL2,True
+PMC10034389,RARRES2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,5919,RARRES2,True
+PMC10034389,UCHL1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,7345,UCHL1,True
+PMC10034389,ESR1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,2099,ESR1,True
+PMC10034389,REV3L,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,5980,REV3L,True
+PMC10034389,PAPSS1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,9061,PAPSS1,True
+PMC10034389,KLF2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,10365,KLF2,True
+PMC10034389,GFPT2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,9945,GFPT2,True
+PMC10034389,FOS,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,2353,FOS,True
+PMC10034389,CCNA2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,890,CCNA2,True
+PMC10034389,HMOX1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,3162,HMOX1,True
+PMC10034389,CCNB1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,891,CCNB1,True
+PMC10034389,NCAPG,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,64151,NCAPG,True
+PMC10034389,ECT2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; originalFig3E/2D RFscreening15 retained; finalnomogram6 is subset; Fig2F20correlationvariables not substituted for model15.,exact_NCBI_symbol,1894,ECT2,True
+PMC10348380,CTGF,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,unambiguous_NCBI_alias,1490,CCN2,True
+PMC10348380,CXCL12,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,6387,CXCL12,True
+PMC10348380,NGF,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,4803,NGF,True
+PMC10348380,PECAM1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,5175,PECAM1,True
+PMC10348380,WNT5A,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,7474,WNT5A,True
+PMC10583561,BAK1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,578,BAK1,True
+PMC10583561,FLT1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,2321,FLT1,True
+PMC10583561,LMNA,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,4000,LMNA,True
+PMC10687456,CXCL12,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,6387,CXCL12,True
+PMC10687456,ROBO3,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,64221,ROBO3,True
+PMC10687456,SCG2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,7857,SCG2,True
+PMC10727599,DES,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,1674,DES,True
+PMC10727599,GREM1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,26585,GREM1,True
+PMC10727599,MBNL1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,4154,MBNL1,True
+PMC10727599,AEBP1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,165,AEBP1,True
+PMC10870152,CLU,False,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; named8 individualROC genes plus final3 subset; prose13-versus8 inventory unresolved.,exact_NCBI_symbol,1191,CLU,True
+PMC10870152,C3,False,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; named8 individualROC genes plus final3 subset; prose13-versus8 inventory unresolved.,exact_NCBI_symbol,718,C3,True
+PMC10870152,FGL2,False,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; named8 individualROC genes plus final3 subset; prose13-versus8 inventory unresolved.,exact_NCBI_symbol,10875,FGL2,True
+PMC10870152,PROS1,False,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; named8 individualROC genes plus final3 subset; prose13-versus8 inventory unresolved.,exact_NCBI_symbol,5627,PROS1,True
+PMC10870152,GAS6,False,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; named8 individualROC genes plus final3 subset; prose13-versus8 inventory unresolved.,exact_NCBI_symbol,2621,GAS6,True
+PMC10870152,C1QA,False,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; named8 individualROC genes plus final3 subset; prose13-versus8 inventory unresolved.,exact_NCBI_symbol,712,C1QA,True
+PMC10870152,ARG2,False,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; named8 individualROC genes plus final3 subset; prose13-versus8 inventory unresolved.,exact_NCBI_symbol,384,ARG2,True
+PMC10870152,PECAM1,False,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed; named8 individualROC genes plus final3 subset; prose13-versus8 inventory unresolved.,exact_NCBI_symbol,5175,PECAM1,True
+PMC11041628,SERPING1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,710,SERPING1,True
+PMC11041628,VCAM1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,7412,VCAM1,True
+PMC11041628,CLU,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,1191,CLU,True
+PMC11041628,C3,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,718,C3,True
+PMC11041628,CD55,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,1604,CD55,True
+PMC11485110,AGPAT4,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,56895,AGPAT4,True
+PMC11485110,ASF1A,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,25842,ASF1A,True
+PMC11485110,CASP9,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,842,CASP9,True
+PMC11485110,COMT,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,1312,COMT,True
+PMC11485110,GSTA4,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,2941,GSTA4,True
+PMC11485110,LACTB2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,51110,LACTB2,True
+PMC11485110,NECAP2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,55707,NECAP2,True
+PMC11485110,NEDD4,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,4734,NEDD4,True
+PMC11485110,NFKB1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,4790,NFKB1,True
+PMC11485110,NPDC1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,56654,NPDC1,True
+PMC11485110,RTP4,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,64108,RTP4,True
+PMC11659837,PMP22,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,5376,PMP22,True
+PMC11659837,QSOX1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,5768,QSOX1,True
+PMC11659837,REV3L,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,5980,REV3L,True
+PMC11659837,SP110,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,3431,SP110,True
+PMC11871347,FZD7,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,8324,FZD7,True
+PMC11871914,SYNE2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,23224,SYNE2,True
+PMC11871914,TXN,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,7295,TXN,True
+PMC11871914,NUPR1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,26471,NUPR1,True
+PMC11871914,CTSK,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,1513,CTSK,True
+PMC11871914,GSN,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,2934,GSN,True
+PMC11871914,MGP,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,4256,MGP,True
+PMC11871914,IER2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,9592,IER2,True
+PMC11871914,CXCL12,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,6387,CXCL12,True
+PMC11879817,EHF,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,26298,EHF,True
+PMC11914081,PDIA4,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,9601,PDIA4,True
+PMC11914081,PGBD5,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,79605,PGBD5,True
+PMC11925871,CYP17A1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,1586,CYP17A1,True
+PMC11925871,NR3C1,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,2908,NR3C1,True
+PMC11925871,ENO2,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,2026,ENO2,True
+PMC11925871,NGF,True,True,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,4803,NGF,True
+PMC11956255,APLNR,True,True,main_article_diagnostic_evaluation,partial_roster_two_unambiguous_ROC_genes_third_identity_unresolved,exact_NCBI_symbol,187,APLNR,True
+PMC11956255,HLA-DPA1,True,True,main_article_diagnostic_evaluation,partial_roster_two_unambiguous_ROC_genes_third_identity_unresolved,exact_NCBI_symbol,3113,HLA-DPA1,True
+PMC12043453,ACSL4,True,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,2182,ACSL4,True
+PMC12043453,CYP2C18,True,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,1562,CYP2C18,True
+PMC12043453,CYP2C9,True,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,1559,CYP2C9,True
+PMC12043453,HSD17B3,True,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,3293,HSD17B3,True
+PMC12043453,HSDL2,True,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,84263,HSDL2,True
+PMC12043453,PTGS2,True,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,5743,PTGS2,True
+PMC12078282,PDK4,True,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,5166,PDK4,True
+PMC12078282,AIFM1,True,False,main_article_diagnostic_evaluation,direct_mRNA_final_roster_closed,exact_NCBI_symbol,9131,AIFM1,True
+PMC12079719,HSPA5,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,3309,HSPA5,True
+PMC12079719,XBP1,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,7494,XBP1,True
+PMC12079719,HSP90B1,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,7184,HSP90B1,True
+PMC12079719,DNAJC3,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5611,DNAJC3,True
+PMC12079719,PDIA3,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2923,PDIA3,True
+PMC12079719,PDIA6,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,10130,PDIA6,True
+PMC12079719,PDIA4,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,9601,PDIA4,True
+PMC12079719,HERPUD1,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,9709,HERPUD1,True
+PMC12079719,MANF,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,7873,MANF,True
+PMC12095003,BST2,True,True,main_article_diagnostic_evaluation,Main identifiable three retained; discordant ANGPT1/CCL2 supplement and original combined-model identity unresolved.,exact_NCBI_symbol,684,BST2,True
+PMC12095003,IL4R,True,True,main_article_diagnostic_evaluation,Main identifiable three retained; discordant ANGPT1/CCL2 supplement and original combined-model identity unresolved.,exact_NCBI_symbol,3566,IL4R,True
+PMC12095003,MET,True,True,main_article_diagnostic_evaluation,Main identifiable three retained; discordant ANGPT1/CCL2 supplement and original combined-model identity unresolved.,exact_NCBI_symbol,4233,MET,True
+PMC12558289,FZD4,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,8322,FZD4,True
+PMC12558289,SRPX2,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,27286,SRPX2,True
+PMC12558289,COL8A1,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,1295,COL8A1,True
+PMC12640579,CEACAM1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,634,CEACAM1,True
+PMC12640579,FOS,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2353,FOS,True
+PMC12640579,PLA2G2A,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5320,PLA2G2A,True
+PMC12640579,THBS1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,7057,THBS1,True
+PMC12714822,DDR2,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,4921,DDR2,True
+PMC12714822,ENO3,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2027,ENO3,True
+PMC12714822,ESM1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,11082,ESM1,True
+PMC12714822,NMBR,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,4829,NMBR,True
+PMC12714822,PRKAB1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5564,PRKAB1,True
+PMC12714822,PRPF19,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,27339,PRPF19,True
+PMC12765064,EGFR,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,1956,EGFR,True
+PMC12765064,FOS,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2353,FOS,True
+PMC12765064,IGF1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,3479,IGF1,True
+PMC12765064,PTGS2,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5743,PTGS2,True
+PMC12765064,IL10,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,3586,IL10,True
+PMC12765064,PGR,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5241,PGR,True
+PMC12765064,NR3C1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2908,NR3C1,True
+PMC13086824,CAV1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,857,CAV1,True
+PMC13086824,PDK4,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5166,PDK4,True
+PMC13086824,CSPG4,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,1464,CSPG4,True
+PMC13086824,SERPINE1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5054,SERPINE1,True
+PMC8290202,SYK,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,6850,SYK,True
+PMC8290202,BIN2,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,51411,BIN2,True
+PMC8290202,ADAM12,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,8038,ADAM12,True
+PMC8290202,CCR5,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,1234,CCR5,True
+PMC8290202,MRC1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,4360,MRC1,True
+PMC8372410,APLNR,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,187,APLNR,True
+PMC8372410,CCL21,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,6366,CCL21,True
+PMC8372410,FCGR2A,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2212,FCGR2A,True
+PMC8976475,FMO1,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2326,FMO1,True
+PMC8976475,PDLIM3,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,27295,PDLIM3,True
+PMC8976475,FAM129A,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,unambiguous_NCBI_alias,116496,NIBAN1,True
+PMC8976475,CLDN11,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5010,CLDN11,True
+PMC8976475,C3,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,718,C3,True
+PMC8976475,TMPRSS4,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,56649,TMPRSS4,True
+PMC8976475,DEFB1,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,1672,DEFB1,True
+PMC9041605,NFASC,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,23114,NFASC,True
+PMC9041605,CHL1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,10752,CHL1,True
+PMC9118874,AQP1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,358,AQP1,True
+PMC9118874,ZWINT,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,11130,ZWINT,True
+PMC9353714,ACLY,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,47,ACLY,True
+PMC9353714,PTGFR,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5737,PTGFR,True
+PMC9353714,ADH1B,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,125,ADH1B,True
+PMC9353714,MYOM1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,8736,MYOM1,True
+PMC9407481,SCG2,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,7857,SCG2,True
+PMC9407481,EGR1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,1958,EGR1,True
+PMC9407481,ASPN,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,54829,ASPN,True
+PMC9407481,SLIT2,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,9353,SLIT2,True
+PMC9407481,GEM,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2669,GEM,True
+PMC9407481,SFRP2,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,6423,SFRP2,True
+PMC9407481,FOS,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2353,FOS,True
+PMC9407481,GREM1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,26585,GREM1,True
+PMC9407481,C9orf152,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,401546,C9orf152,True
+PMC9407481,PAEP,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5047,PAEP,True
+PMC9428290,BGN,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,633,BGN,True
+PMC9428290,AQP1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,358,AQP1,True
+PMC9428290,ELMO1,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,9844,ELMO1,True
+PMC9428290,DDR2,True,True,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,4921,DDR2,True
+PMC9843312,BST2,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,684,BST2,True
+PMC9843312,CCL13,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,6357,CCL13,True
+PMC9843312,CD86,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,942,CD86,True
+PMC9843312,CSF1,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,1435,CSF1,True
+PMC9843312,FAM3C,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,10447,FAM3C,True
+PMC9843312,GREM1,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,26585,GREM1,True
+PMC9843312,ISG20,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,3669,ISG20,True
+PMC9843312,PSMB8,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,5696,PSMB8,True
+PMC9843312,S100A11,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,6282,S100A11,True
+PMC9843312,GSK3A,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,2931,GSK3A,True
+PMC9843312,HTR2B,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,3357,HTR2B,True
+PMC9843312,RAB3GAP1,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,22930,RAB3GAP1,True
+PMC9843312,ARFIP2,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,23647,ARFIP2,True
+PMC9843312,BNIP3,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,664,BNIP3,True
+PMC9843312,MAOA,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,4128,MAOA,True
+PMC9843312,PPP1R13L,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,10848,PPP1R13L,True
+PMC9843312,SH3GLB2,True,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,56904,SH3GLB2,True
+PMC9858668,FTO,False,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,79068,FTO,True
+PMC9858668,HNRNPC,False,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,3183,HNRNPC,True
+PMC9858668,HNRNPA2B1,False,False,main_article_diagnostic_evaluation,All main explicitly evaluated sets retained; later prioritized subset is not substituted for full ROC/model input roster.,exact_NCBI_symbol,3181,HNRNPA2B1,True
+PMC9745028,CXCL12,True,True,main_article_diagnostic_evaluation,"Five direct mRNA nomogram features; quantitative nonROC assessment, not independently validated diagnostic discrimination.",exact_NCBI_symbol,6387,CXCL12,True
+PMC9745028,PDGFRL,True,True,main_article_diagnostic_evaluation,"Five direct mRNA nomogram features; quantitative nonROC assessment, not independently validated diagnostic discrimination.",exact_NCBI_symbol,5157,PDGFRL,True
+PMC9745028,AGTR1,True,True,main_article_diagnostic_evaluation,"Five direct mRNA nomogram features; quantitative nonROC assessment, not independently validated diagnostic discrimination.",exact_NCBI_symbol,185,AGTR1,True
+PMC9745028,PTGER3,True,True,main_article_diagnostic_evaluation,"Five direct mRNA nomogram features; quantitative nonROC assessment, not independently validated diagnostic discrimination.",exact_NCBI_symbol,5733,PTGER3,True
+PMC9745028,S1PR1,True,True,main_article_diagnostic_evaluation,"Five direct mRNA nomogram features; quantitative nonROC assessment, not independently validated diagnostic discrimination.",exact_NCBI_symbol,1901,S1PR1,True
+PMC9748153,AEBP1,True,True,main_article_diagnostic_evaluation,Initial five score features retained; DLX6 removed in final four after11691 assessment.,exact_NCBI_symbol,165,AEBP1,True
+PMC9748153,DLX6,True,True,initial_score_then_removed,Initial five score features retained; DLX6 removed in final four after11691 assessment.,exact_NCBI_symbol,1750,DLX6,True
+PMC9748153,HOXB6,True,True,main_article_diagnostic_evaluation,Initial five score features retained; DLX6 removed in final four after11691 assessment.,exact_NCBI_symbol,3216,HOXB6,True
+PMC9748153,KLF2,True,True,main_article_diagnostic_evaluation,Initial five score features retained; DLX6 removed in final four after11691 assessment.,exact_NCBI_symbol,10365,KLF2,True
+PMC9748153,RORB,True,True,main_article_diagnostic_evaluation,Initial five score features retained; DLX6 removed in final four after11691 assessment.,exact_NCBI_symbol,6096,RORB,True
+PMC10504186,GATA6,True,True,main_article_diagnostic_evaluation,"Five named main GaussianNB features retained; accession,labels,QCcounts and fitted-parameter identity unresolved.",exact_NCBI_symbol,2627,GATA6,True
+PMC10504186,HMOX1,True,True,main_article_diagnostic_evaluation,"Five named main GaussianNB features retained; accession,labels,QCcounts and fitted-parameter identity unresolved.",exact_NCBI_symbol,3162,HMOX1,True
+PMC10504186,HS3ST1,True,True,main_article_diagnostic_evaluation,"Five named main GaussianNB features retained; accession,labels,QCcounts and fitted-parameter identity unresolved.",exact_NCBI_symbol,9957,HS3ST1,True
+PMC10504186,NFASC,True,True,main_article_diagnostic_evaluation,"Five named main GaussianNB features retained; accession,labels,QCcounts and fitted-parameter identity unresolved.",exact_NCBI_symbol,23114,NFASC,True
+PMC10504186,PTGIS,True,True,main_article_diagnostic_evaluation,"Five named main GaussianNB features retained; accession,labels,QCcounts and fitted-parameter identity unresolved.",exact_NCBI_symbol,5740,PTGIS,True
+PMC12559524,FXYD1,False,False,main_article_diagnostic_evaluation,Known51981validation from public TableS1; excluded new51981 confirmation; complete inaccessible main model repertoire not asserted.,exact_NCBI_symbol,5348,FXYD1,True

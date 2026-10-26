@@ -1,0 +1,414 @@
+[
+  {
+    "source": "github_release/endometriosis-transcriptomic-reanalysis/scripts/plots/figure1_workflow.R",
+    "backend": "r",
+    "summary": {
+      "ready": true,
+      "strict": false,
+      "counts": {
+        "PASS": 11,
+        "WARN": 3,
+        "FAIL": 0
+      }
+    },
+    "findings": [
+      {
+        "check_id": "SOURCE-SYNTAX",
+        "level": "WARN",
+        "message": "Basic R delimiter check passed; run Rscript parse() when R is available",
+        "evidence": []
+      },
+      {
+        "check_id": "FONT-FAMILY",
+        "level": "PASS",
+        "message": "A publication-safe sans-serif family is configured",
+        "evidence": [
+          "Helvetica"
+        ]
+      },
+      {
+        "check_id": "FONT-SIZE",
+        "level": "WARN",
+        "message": "No explicit text sizes found; verify readability at final physical size",
+        "evidence": []
+      },
+      {
+        "check_id": "COLOR-MAP",
+        "level": "PASS",
+        "message": "No rainbow/jet/hsv color mapping detected",
+        "evidence": []
+      },
+      {
+        "check_id": "EDITABLE-TEXT",
+        "level": "PASS",
+        "message": "svglite and cairo_pdf editable-text devices are configured",
+        "evidence": []
+      },
+      {
+        "check_id": "EXPORT-VECTOR",
+        "level": "PASS",
+        "message": "Both SVG and PDF exports are present",
+        "evidence": []
+      },
+      {
+        "check_id": "EXPORT-RASTER",
+        "level": "PASS",
+        "message": "TIFF raster export is present",
+        "evidence": []
+      },
+      {
+        "check_id": "RASTER-DPI",
+        "level": "PASS",
+        "message": "A raster export of at least 600 dpi is configured",
+        "evidence": [
+          "600"
+        ]
+      },
+      {
+        "check_id": "FINAL-WIDTH",
+        "level": "WARN",
+        "message": "No static final width detected; verify the target journal's current specification",
+        "evidence": []
+      },
+      {
+        "check_id": "DATA-SAMPLING",
+        "level": "PASS",
+        "message": "No high-confidence row-sampling operation detected",
+        "evidence": []
+      },
+      {
+        "check_id": "DATA-EXCLUSION",
+        "level": "PASS",
+        "message": "No high-confidence missing-data exclusion detected",
+        "evidence": []
+      },
+      {
+        "check_id": "DEMO-DATA",
+        "level": "PASS",
+        "message": "No obvious simulated-data generator detected",
+        "evidence": []
+      },
+      {
+        "check_id": "LOG-GUARD",
+        "level": "PASS",
+        "message": "No logarithmic transform or axis detected",
+        "evidence": []
+      },
+      {
+        "check_id": "BACKEND-EXCLUSIVE",
+        "level": "PASS",
+        "message": "No obvious cross-backend plotting reference found for r",
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "source": "github_release/endometriosis-transcriptomic-reanalysis/scripts/plots/figure2_identity.R",
+    "backend": "r",
+    "summary": {
+      "ready": true,
+      "strict": false,
+      "counts": {
+        "PASS": 12,
+        "WARN": 2,
+        "FAIL": 0
+      }
+    },
+    "findings": [
+      {
+        "check_id": "SOURCE-SYNTAX",
+        "level": "WARN",
+        "message": "Basic R delimiter check passed; run Rscript parse() when R is available",
+        "evidence": []
+      },
+      {
+        "check_id": "FONT-FAMILY",
+        "level": "PASS",
+        "message": "A publication-safe sans-serif family is configured",
+        "evidence": [
+          "Helvetica"
+        ]
+      },
+      {
+        "check_id": "FONT-SIZE",
+        "level": "PASS",
+        "message": "All detected text sizes are at least 5 pt (minimum 6 pt)",
+        "evidence": []
+      },
+      {
+        "check_id": "COLOR-MAP",
+        "level": "PASS",
+        "message": "No rainbow/jet/hsv color mapping detected",
+        "evidence": []
+      },
+      {
+        "check_id": "EDITABLE-TEXT",
+        "level": "PASS",
+        "message": "svglite and cairo_pdf editable-text devices are configured",
+        "evidence": []
+      },
+      {
+        "check_id": "EXPORT-VECTOR",
+        "level": "PASS",
+        "message": "Both SVG and PDF exports are present",
+        "evidence": []
+      },
+      {
+        "check_id": "EXPORT-RASTER",
+        "level": "PASS",
+        "message": "TIFF raster export is present",
+        "evidence": []
+      },
+      {
+        "check_id": "RASTER-DPI",
+        "level": "PASS",
+        "message": "A raster export of at least 600 dpi is configured",
+        "evidence": [
+          "600"
+        ]
+      },
+      {
+        "check_id": "FINAL-WIDTH",
+        "level": "WARN",
+        "message": "No static final width detected; verify the target journal's current specification",
+        "evidence": []
+      },
+      {
+        "check_id": "DATA-SAMPLING",
+        "level": "PASS",
+        "message": "No high-confidence row-sampling operation detected",
+        "evidence": []
+      },
+      {
+        "check_id": "DATA-EXCLUSION",
+        "level": "PASS",
+        "message": "No high-confidence missing-data exclusion detected",
+        "evidence": []
+      },
+      {
+        "check_id": "DEMO-DATA",
+        "level": "PASS",
+        "message": "No obvious simulated-data generator detected",
+        "evidence": []
+      },
+      {
+        "check_id": "LOG-GUARD",
+        "level": "PASS",
+        "message": "No logarithmic transform or axis detected",
+        "evidence": []
+      },
+      {
+        "check_id": "BACKEND-EXCLUSIVE",
+        "level": "PASS",
+        "message": "No obvious cross-backend plotting reference found for r",
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "source": "github_release/endometriosis-transcriptomic-reanalysis/scripts/plots/figure3_comparators.R",
+    "backend": "r",
+    "summary": {
+      "ready": true,
+      "strict": false,
+      "counts": {
+        "PASS": 12,
+        "WARN": 2,
+        "FAIL": 0
+      }
+    },
+    "findings": [
+      {
+        "check_id": "SOURCE-SYNTAX",
+        "level": "WARN",
+        "message": "Basic R delimiter check passed; run Rscript parse() when R is available",
+        "evidence": []
+      },
+      {
+        "check_id": "FONT-FAMILY",
+        "level": "PASS",
+        "message": "A publication-safe sans-serif family is configured",
+        "evidence": [
+          "Helvetica"
+        ]
+      },
+      {
+        "check_id": "FONT-SIZE",
+        "level": "PASS",
+        "message": "All detected text sizes are at least 5 pt (minimum 5.9 pt)",
+        "evidence": []
+      },
+      {
+        "check_id": "COLOR-MAP",
+        "level": "PASS",
+        "message": "No rainbow/jet/hsv color mapping detected",
+        "evidence": []
+      },
+      {
+        "check_id": "EDITABLE-TEXT",
+        "level": "PASS",
+        "message": "svglite and cairo_pdf editable-text devices are configured",
+        "evidence": []
+      },
+      {
+        "check_id": "EXPORT-VECTOR",
+        "level": "PASS",
+        "message": "Both SVG and PDF exports are present",
+        "evidence": []
+      },
+      {
+        "check_id": "EXPORT-RASTER",
+        "level": "PASS",
+        "message": "TIFF raster export is present",
+        "evidence": []
+      },
+      {
+        "check_id": "RASTER-DPI",
+        "level": "PASS",
+        "message": "A raster export of at least 600 dpi is configured",
+        "evidence": [
+          "600"
+        ]
+      },
+      {
+        "check_id": "FINAL-WIDTH",
+        "level": "WARN",
+        "message": "No static final width detected; verify the target journal's current specification",
+        "evidence": []
+      },
+      {
+        "check_id": "DATA-SAMPLING",
+        "level": "PASS",
+        "message": "No high-confidence row-sampling operation detected",
+        "evidence": []
+      },
+      {
+        "check_id": "DATA-EXCLUSION",
+        "level": "PASS",
+        "message": "No high-confidence missing-data exclusion detected",
+        "evidence": []
+      },
+      {
+        "check_id": "DEMO-DATA",
+        "level": "PASS",
+        "message": "No obvious simulated-data generator detected",
+        "evidence": []
+      },
+      {
+        "check_id": "LOG-GUARD",
+        "level": "PASS",
+        "message": "No logarithmic transform or axis detected",
+        "evidence": []
+      },
+      {
+        "check_id": "BACKEND-EXCLUSIVE",
+        "level": "PASS",
+        "message": "No obvious cross-backend plotting reference found for r",
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "source": "github_release/endometriosis-transcriptomic-reanalysis/scripts/plots/figure4_joint.R",
+    "backend": "r",
+    "summary": {
+      "ready": true,
+      "strict": false,
+      "counts": {
+        "PASS": 12,
+        "WARN": 2,
+        "FAIL": 0
+      }
+    },
+    "findings": [
+      {
+        "check_id": "SOURCE-SYNTAX",
+        "level": "WARN",
+        "message": "Basic R delimiter check passed; run Rscript parse() when R is available",
+        "evidence": []
+      },
+      {
+        "check_id": "FONT-FAMILY",
+        "level": "PASS",
+        "message": "A publication-safe sans-serif family is configured",
+        "evidence": [
+          "Helvetica"
+        ]
+      },
+      {
+        "check_id": "FONT-SIZE",
+        "level": "PASS",
+        "message": "All detected text sizes are at least 5 pt (minimum 5.8 pt)",
+        "evidence": []
+      },
+      {
+        "check_id": "COLOR-MAP",
+        "level": "PASS",
+        "message": "No rainbow/jet/hsv color mapping detected",
+        "evidence": []
+      },
+      {
+        "check_id": "EDITABLE-TEXT",
+        "level": "PASS",
+        "message": "svglite and cairo_pdf editable-text devices are configured",
+        "evidence": []
+      },
+      {
+        "check_id": "EXPORT-VECTOR",
+        "level": "PASS",
+        "message": "Both SVG and PDF exports are present",
+        "evidence": []
+      },
+      {
+        "check_id": "EXPORT-RASTER",
+        "level": "PASS",
+        "message": "TIFF raster export is present",
+        "evidence": []
+      },
+      {
+        "check_id": "RASTER-DPI",
+        "level": "PASS",
+        "message": "A raster export of at least 600 dpi is configured",
+        "evidence": [
+          "600"
+        ]
+      },
+      {
+        "check_id": "FINAL-WIDTH",
+        "level": "WARN",
+        "message": "No static final width detected; verify the target journal's current specification",
+        "evidence": []
+      },
+      {
+        "check_id": "DATA-SAMPLING",
+        "level": "PASS",
+        "message": "No high-confidence row-sampling operation detected",
+        "evidence": []
+      },
+      {
+        "check_id": "DATA-EXCLUSION",
+        "level": "PASS",
+        "message": "No high-confidence missing-data exclusion detected",
+        "evidence": []
+      },
+      {
+        "check_id": "DEMO-DATA",
+        "level": "PASS",
+        "message": "No obvious simulated-data generator detected",
+        "evidence": []
+      },
+      {
+        "check_id": "LOG-GUARD",
+        "level": "PASS",
+        "message": "No logarithmic transform or axis detected",
+        "evidence": []
+      },
+      {
+        "check_id": "BACKEND-EXCLUSIVE",
+        "level": "PASS",
+        "message": "No obvious cross-backend plotting reference found for r",
+        "evidence": []
+      }
+    ]
+  }
+]
